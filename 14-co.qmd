@@ -1,0 +1,28 @@
+---
+format: 
+  html:
+    toc: true
+    toc-depth: 4
+---
+# Colorado
+```{r echo = FALSE, message = FALSE}
+
+library(tidyverse)
+library(xfun) # numbers_to_words function
+library(lubridate)
+
+data <- read.csv("2022_annualreportdata.csv")
+
+  data$FirstVisit <- as_date(data$FirstVisit)
+  data$FirstVisit <- paste(month(data[,"FirstVisit"], 
+                           label = TRUE), 
+                           day(data[,"FirstVisit"]), 
+                           sep = " ")
+  data$LastVisit <- as_date(data$LastVisit)
+  data$LastVisit <- paste(month(data[,"LastVisit"], 
+                          label = TRUE), 
+                          day(data[,"LastVisit"]), 
+                          sep = " ")
+
+```
+

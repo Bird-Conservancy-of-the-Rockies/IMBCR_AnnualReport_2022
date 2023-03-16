@@ -1,0 +1,36 @@
+---
+title: "Data Applications"
+---
+
+Each year, we collected breeding bird information in the Great Plains, Rocky Mountains, and Intermountain West and estimated occupancy, density, abundance, and population trend at a variety of spatial scales. This information is used in a variety of ways by IMBCR partners to inform avian conservation and management decisions, such as:  
+
+#### State agency partners
+> **State wildlife agencies** use the trend estimates to monitor Species of Greatest Conservation Need and revise their State Wildlife Action Plans. Trend estimates allow them to identify species that may need additional conservation efforts (e.g., declining populations) or species-specific monitoring efforts. Conversely, species with increasing populations across a state may warrant a lower priority status.  
+
+#### Federal agency partners
+> The **Bureau of Land Management** (BLM) use the density estimates for project-level planning in specific strata, such as a field office. The density estimates inform potential population impacts on species of concern for NEPA projects and environmental assessments by multiplying the densities by the project area to determine the potential number of individuals that could be impacted by the project.  
+>
+> The **U.S. Forest Service** (USFS) uses the trend estimates to monitor focal species within a unit’s Land Management Plan, and to support larger processes under forest plan revision, such as assessing species of conservation concern and identifying focal species.  
+>
+> The **Department of Defens**e (DoD) uses the density and trend estimates for priority species to examine impacts of installation activities on birds. They also compare estimates for specific DoD strata to surrounding regional estimates for context.  
+
+## Recent Overlay Projects
+
+IMBCR partners also implement overlays, or targeted projects, to address specific management questions. Overlay projects use the same sampling design and field methods but are not integrated into the nested stratification of the IMBCR program. These projects benefit from pooling detection data across the IMBCR program, and have regional context for project-specific estimates. Some overlay projects include:  
+
+> Monitored birds in the Atlantic Rim Natural Gas area (south-central Wyoming) to **determine energy development impacts on birds**, and set management triggers to determine when a threshold is met for sagebrush songbird occupancy in the project area compared to surrounding BLM lands.  
+
+> Examined community-level effects and bird species relationships with restoration treatments under the **USFS’s Collaborative Forest Landscape Restoration Program** implemented across the Front Range in Colorado.  
+
+> Compared population estimates on private ranches in the Great Plains to estimates in the surrounding region to see if ranches participating in the **Audubon Conservation Ranching** program provide breeding habitat for grassland birds.  
+
+## Adaptive Management
+
+Monitoring is a key part of adaptive management, providing the means for assessing the impacts of management changes and improving system understanding (Lyons et al., 2008; Nichols & Williams, 2006). The IMBCR program accommodates the principles of adaptive monitoring (Lindenmayer & Likens, 2009) because it:  
+
+1. addresses well-defined and tractable questions  
+2. is underpinned by rigorous science 
+3. is based on a conceptual model of how bird populations function and  
+4. is relevant to the management of natural resources (Pavlacky et al., 2017).  
+
+Under the adaptive monitoring framework, the objectives, sampling design, data collection, analysis, and interpretation are iterative, allowing the program to evolve and develop in response to new information or new management questions. The IMBCR program allows for different stratification schemes across states and regions and the re-stratification of local management units to better address partner management objectives or new questions. The flexible hierarchical design also accommodates annual fluctuation of sampling intensity without compromising regional population estimates. In addition, overlay projects can address specific management questions or hypotheses without affecting the integrity of the overall IMBCR framework.  

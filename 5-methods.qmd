@@ -1,0 +1,23 @@
+# Methods
+
+## Study Area
+
+## Sampling Design
+
+### Sampling Frame and Stratification
+
+### Sampling Units
+
+### Sample Selection
+
+## Sampling Methods
+
+## Data Analysis
+
+### Distance Analysis Assumptions
+
+### Density Estimation
+
+### Occupancy Analysis
+
+### Automated Analysis

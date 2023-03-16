@@ -1,0 +1,56 @@
+---
+format:
+  html:
+    toc: FALSE
+    number-sections: FALSE
+title: "Home"
+---
+::: {.column-margin}
+
+<img src="IMBCR-logo-vertical.png" width="100"/>  
+
+<br> 
+<br>
+<br> 
+<br>
+  
+![Scissor-tailed Flycatcher by Nick Tepper](NickTepper-STFL.jpg)  
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+
+**Suggested Citation**\
+Reese, J., McLaren, M. F., Smith, M., Walker, T., Timmer, J. M., White, C. M., Pavlacky Jr., D. C., Sparks, R. A. 2023. Integrated Monitoring in Bird Conservation Regions (IMBCR): 2022 Field Season Report. Bird Conservancy of the Rockies. Brighton, Colorado, USA.  
+
+<br> 
+<br>
+
+**Contact Information**  
+Matthew McLaren  
+matthew.mclaren@birdconservancy.org  
+970-482-1707  
+
+:::
+## 2022 Field Season Report {.unnumbered}
+
+Bird Conservancy of the Rockies (Bird Conservancy), in conjunction with its partners, conducted the 15th consecutive year of landbird monitoring for the Integrated Monitoring in Bird Conservation Regions (IMBCR) program.  
+
+IMBCR is based on a spatially balanced sampling design which provides inference to avian populations at various scales, from local management units to entire states or Bird Conservation Regions, facilitating conservation at local and national levels. The nested design also provides a consistent and flexible framework for understanding and comparing the status and annual changes of bird populations with local and regional context.  
+
+Collaboration across organizations and spatial scales increases sample sizes and improves the accuracy and precision of population estimates. Analyzing the data collectively allows us to estimate detection probabilities for species that would otherwise have insufficient numbers of detections at local scales.  
+
+For these reasons, the IMBCR program is well-positioned to address conservation and management needs for a wide range of stakeholders, encouraging an interdisciplinary approach to bird conservation that combines monitoring, research, and management.
+<br> 
+<br>
+
+**Bird Conservancy of the Rockies**\
+14500 Lark Bunting Lane\
+Brighton, CO 80603\
+303-659-4348\
+[www.birdconservancy.org](https://birdconservancy.org)\
+Tech. Report \# SC-IMBCR-xx
