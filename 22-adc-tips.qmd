@@ -133,7 +133,7 @@ Users may view results of multiple queries at once. To do this, run the first qu
 
 It is possible to create a link to the Avian Data Center/ Explore the Data screen with a pre-loaded set of filters for a query. To do this, add the custom set of filters for your query per the instructions above and then click the “Generate URL” button near the top right corner of the screen. A pop-up box will appear with a highlighted URL address. Once you copy the highlighted text, you may paste the URL address into an email or document using conventional means. Please note that whoever receives the URL address will need to run the query after clicking on the link to see the survey locations, results, and raw count statistics for the set of filters of interest.
 
-##Viewing Maps (Map Tab)
+## Viewing Maps (Map Tab)
 
 **_What is displayed_**
 
@@ -145,7 +145,7 @@ By default, the zoom capability of the maps page is restricted to protect the pr
 
 You may add the following layers to the map: Bird Conservation Region boundaries, BIA boundaries, DoD boundaries, NPS boundaries, USFS boundaries and BLM Field Office boundaries. To do this, left click on the drop down menu at the top left corner of the map, select the desired layer, and click the “add layer” button. It is possible to add multiple layers to the map by repeating this process. The top-most feature’s name will appear if you left click your mouse inside the layer’s boundaries.
 
-##Viewing Occupancy/Density Results (Occupancy and Density Tabs)
+## Viewing Occupancy/Density Results (Occupancy and Density Tabs)
 
 **_Viewing Tables_**
 
@@ -167,10 +167,6 @@ You may easily save the results of your query by clicking the “Copy to clipboa
 
 Please keep in mind that queries with very generic filters will result in long wait times and may not function optimally (your browser may end up crashing). For instance, if a user selects only the IMBCR filter, occupancy results will be displayed for every species and strata/superstrata combination for which there are occupancy and/or density results. If your query is not specific enough, the chart on the right side of the screen will not be displayed or a pop-up box will appear asking if you would like to continue. This pop-up box is designed to prevent your web browser from crashing while the RMADC attempts to create a chart that would be extremely difficult to interpret. We recommend that you cancel the proposed query and add additional filters to make your query less generic. 
 
-##Viewing Raw Count Statistics (Species Counts Tab)
+## Viewing Raw Count Statistics (Species Counts Tab)
 
 You may view the raw count of detections for each species and the effort (expressed as the number of point count stations surveyed) for your query by clicking on the “Species Counts” tab located just below the drop down filter menu in the upper left corner of the screen. Both the counts (left table) and effort tables (right table) may be sorted by clicking on the row header. Additionally, you may view the counts and effort by BCR, State, County, Stratum, or Management Entity by clicking on the “Count by” drop down menu located above the counts table. If you have filtered using “Superstrata”, viewing counts by Stratum is an excellent way of getting a list of all the strata that comprise a Superstratum. If you would prefer to view effort expressed as the number of sampling units surveyed, click on the “View Options” button located at the top of the screen and check the box labeled “Show effort by number of sampling units instead of by point”.
-
-
-
-
