@@ -2,9 +2,20 @@
 format:
   html:
     toc: FALSE
-title: "About"
+title: "About Us"
 ---
-# About Bird Conservancy of the Rockies {.unnumbered}
+
+::: {.column-margin}
+
+
+<br> 
+<br>
+  
+<img src="BCR-3-teams-logo.png" width="250"/>  
+
+:::
+
+# Bird Conservancy of the Rockies {.unnumbered}
 
 ### Connecting people, birds and land {.unnumbered}
 
@@ -14,21 +25,16 @@ title: "About"
 
 Bird Conservancy of the Rockies conserves birds and their habitats through an integrated approach of science, education, and land stewardship. Our work radiates from the Rockies to the Great Plains, Mexico and beyond. Our mission is advanced through sound science, achieved through empowering people, realized through stewardship, and sustained through partnerships. Together, we are improving native bird populations, the land, and the lives of people.
 
-**Core Values**\
-1. Science provides the foundation for effective bird conservation.\
-2. Education is critical to the success of bird conservation.\
-3. Stewardship of birds and their habitats is a shared responsibility.
+>**Core Values**\
+>1. Science provides the foundation for effective bird conservation.\
+>2. Education is critical to the success of bird conservation.\
+>3. Stewardship of birds and their habitats is a shared responsibility.
+  
+  
+> **Goals**\
+>1. Guide conservation action where it is needed most by conducting scientifically rigorous monitoring and research on birds and their habitats within the context of their full annual cycle.\
+>2. Inspire conservation action in people by developing relationships through community outreach and science-based, experiential education programs.\
+>3. Contribute to bird population viability and help sustain working lands by partnering with landowners and managers to enhance wildlife habitat.\
+>4. Promote conservation and inform land management decisions by disseminating scientific knowledge and developing tools and recommendations.  
 
-**Goals**\
-1. Guide conservation action where it is needed most by conducting scientifically rigorous monitoring and research on birds and their habitats within the context of their full annual cycle.\
-2. Inspire conservation action in people by developing relationships through community outreach and science-based, experiential education programs.\
-3. Contribute to bird population viability and help sustain working lands by partnering with landowners and managers to enhance wildlife habitat.\
-4. Promote conservation and inform land management decisions by disseminating scientific knowledge and developing tools and recommendations.
-
-**Contact Information**\
-Matthew McLaren\
-matthew.mclaren\@birdconservancy.org\
-Bird Conservancy of the Rockies\
-14500 Lark Bunting Lane\
-Brighton, CO 80603\
-970-482-1707
+To learn more visit our website at [www.birdconservancy.org](https://birdconservancy.org).

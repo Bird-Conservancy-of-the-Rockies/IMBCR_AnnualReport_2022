@@ -6,7 +6,7 @@ prefer-html: true
 title: "Summary"
 ---
 
-```{r}
+```{r, echo = FALSE, message = FALSE}
 library(tidyverse)
 library(lubridate)
 data <- read.csv("2022_annualreportdata.csv")
@@ -87,7 +87,7 @@ This change means that the number of species with density or occupancy estimates
 
 ## Planned and Completed Strata {.unnumbered}
 
-```{r, echo = F}
+```{r, echo = F, message = F}
 #| column: page
 
 library(DT)
