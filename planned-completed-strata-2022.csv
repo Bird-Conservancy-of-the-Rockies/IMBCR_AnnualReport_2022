@@ -1,0 +1,244 @@
+﻿State,bcr,Stratum,Year,Partner,Area,LongStratum,Planned,Completed
+AZ,34,AZ-BCR34-CF,2022,BCR,7426,AZ-BCR34-CF: Coconino National Forest,34,26
+AZ,34,AZ-CORONADO-RH,2022,BCR,1652,AZ-CORONADO-RH: Coronado National Forest - High Elevation,5,3
+AZ,34,AZ-CORONADO-RL,2022,BCR,5548,AZ-CORONADO-RL: Coronado National Forest - Low Elevation,15,14
+AZ,34,AZ-KAIBAB-KH,2022,BCR,4319,AZ-KAIBAB-KH: Kaibab National Forest - High Elevation,40,35
+AZ,34,AZ-KAIBAB-KL,2022,BCR,2182,AZ-KAIBAB-KL: Kaibab National Forest - Low Elevation,40,27
+CA,9,CA-BCR9-CC,2022,GBBO,118,CA-BCR9-CC: Bureau of Land Management - Carson City District,3,3
+CA,9,CA-BCR9-CD,2022,GBBO,1039,CA-BCR9-CD: Bureau of Land Management - California Desert District,3,3
+CA,9,CA-BCR9-CN,2022,GBBO,2668,CA-BCR9-CN: Bureau of Land Management - Central California District,4,4
+CA,9,CA-BCR9-HT,2022,GBBO,1174,CA-BCR9-HT: Humboldt-Toiyabe National Forest,3,3
+CA,9,CA-BCR9-NC,2022,GBBO,5468,CA-BCR9-NC: Bureau of Land Management - Northern California District,4,4
+CA,15,CA-BCR15-HT,2022,GBBO,1635,CA-BCR15-HT: Humboldt-Toiyabe National Forest,3,3
+CO,10,CO-BCR10-AO,2022,BCR,5060,CO-BCR10-AO: All Other Lands,5,5
+CO,10,CO-BCR10-AO,2022,BCR,9251,CO-BCR10-AO: All Other Lands,5,5
+CO,10,CO-BCR10-AO,2022,BCR,9348,CO-BCR10-AO: All Other Lands,5,5
+CO,10,CO-BCR10-BL,2022,BCR,4288,CO-BCR10-BL: Bureau of Land Management,9,9
+CO,16,CO-BCR16-AO,2022,BCR,51214,CO-BCR16-AO: All Other Lands,25,23
+CO,16,CO-BCR16-AR,2022,BCR,6932,CO-BCR16-AR: Arapaho and Roosevelt National Forests,15,13
+CO,16,CO-BCR16-AR,2022,BCR,9645,CO-BCR16-AR: Arapaho and Roosevelt National Forests,15,13
+CO,16,CO-BCR16-BL,2022,BCR,27825,CO-BCR16-BL: Bureau of Land Management,24,23
+CO,16,CO-BCR16-GM,2022,BCR,13630,CO-BCR16-GM: Grand Mesa; Uncompahgre and Gunnison National Forests,5,4
+CO,16,CO-BCR16-MA,2022,BCR,131,CO-BCR16-MA: Manti-La Sal National Forest,2,2
+CO,16,CO-BCR16-NC,2022,BCR,692,CO-BCR16-NC: National Park Service - Northern Colorado Plateau Network,2,2
+CO,16,CO-BCR16-NC,2022,BCR,807,CO-BCR16-NC: National Park Service - Northern Colorado Plateau Network,2,2
+CO,16,CO-BCR16-PS,2022,BCR,10950,CO-BCR16-PS: Pike and San Isabel National Forests,5,4
+CO,16,CO-BCR16-PS,2022,BCR,10968,CO-BCR16-PS: Pike and San Isabel National Forests,5,4
+CO,16,CO-BCR16-RA,2022,BCR,866,CO-BCR16-RA: Rio Grande National Forest - High Elevation,4,3
+CO,16,CO-BCR16-RM,2022,BCR,1628,CO-BCR16-RM: National Park Service - Rocky Mountain Network,2,2
+CO,16,CO-BCR16-RM,2022,BCR,1644,CO-BCR16-RM: National Park Service - Rocky Mountain Network,2,2
+CO,16,CO-BCR16-RM,2022,BCR,1743,CO-BCR16-RM: National Park Service - Rocky Mountain Network,2,2
+CO,16,CO-BCR16-RO,2022,BCR,5123,CO-BCR16-RO: Routt National Forest,6,5
+CO,16,CO-BCR16-RO,2022,BCR,5734,CO-BCR16-RO: Routt National Forest,6,5
+CO,16,CO-BCR16-RP,2022,BCR,5410,CO-BCR16-RP: Rio Grande National Forest - Middle Elevation,4,4
+CO,16,CO-BCR16-RS,2022,BCR,1896,CO-BCR16-RS: Rio Grande National Forest - Low Elevation,4,4
+CO,16,CO-BCR16-SA,2022,BCR,8794,CO-BCR16-SA: San Juan National Forest,5,4
+CO,16,CO-BCR16-SC,2022,BCR,214,CO-BCR16-SC: National Park Service - Southern Colorado Plateau Network,2,2
+CO,16,CO-BCR16-WA,2022,BCR,2138,CO-BCR16-WA: White River National Forest - High Elevation,4,3
+CO,16,CO-BCR16-WF,2022,BCR,551,CO-BCR16-WF: USFS - Williams Fork Management Unit,2,2
+CO,16,CO-BCR16-WP,2022,BCR,5443,CO-BCR16-WP: White River National Forest - Middle Elevation,5,5
+CO,16,CO-BCR16-WS,2022,BCR,2786,CO-BCR16-WS: White River National Forest - Low Elevation,4,3
+CO,18,CO-BCR18-AR,2022,BCR,1127,CO-BCR18-AR: Arkansas River and Tributaries,6,6
+CO,18,CO-BCR18-CO,2022,BCR,4836,CO-BCR18-CO: Comanche National Grassland,5,5
+CO,18,CO-BCR18-DO,2022,BCR,1647,CO-BCR18-DO: Department of Defense,2,2
+CO,18,CO-BCR18-IA,2022,BCR,34755,CO-BCR18-IA: Area between I-70 and the Arkansas River,16,13
+CO,18,CO-BCR18-NP,2022,BCR,11457,CO-BCR18-NP: Area North of the Platte River,8,8
+CO,18,CO-BCR18-PC,2022,BCR,2458,CO-BCR18-PC: Pawnee National Grassland - Private Lands,2,2
+CO,18,CO-BCR18-PG,2022,BCR,810,CO-BCR18-PG: Pawnee National Grassland - Public Lands,8,8
+CO,18,CO-BCR18-PI,2022,BCR,30365,CO-BCR18-PI: Area between the Platte River and I-70,15,11
+CO,18,CO-BCR18-PT,2022,BCR,970,CO-BCR18-PT: Platte River and Tributaries,5,5
+CO,18,CO-BCR18-SA,2022,BCR,24985,CO-BCR18-SA: Area South of the Arkansas River,12,11
+ID,9,ID-BCR9-BO,2022,IBO,1710,ID-BCR9-BO: Boise National Forest,2,3
+ID,9,ID-BCR9-BR,2022,IBO,5953,ID-BCR9-BR: Bureau of Land Management - Bruneau Field Office,0,3
+ID,9,ID-BCR9-BU,2022,IBO,3334,ID-BCR9-BU: Bureau of Land Management - Burley Field Office,3,3
+ID,9,ID-BCR9-CT,2022,BCR,1940,ID-BCR9-CT: Caribou-Targhee National Forest,2,2
+ID,9,ID-BCR9-CU,2022,BCR,300,ID-BCR9-CU: Curlew National Grassland,5,5
+ID,9,ID-BCR9-JA,2022,IBO,5386,ID-BCR9-JA: Bureau of Land Management - Jarbidge Field Office,3,0
+ID,9,ID-BCR9-OW,2022,IBO,5066,ID-BCR9-OW: Bureau of Land Management - Owyhee Field Office,3,3
+ID,9,ID-BCR9-SA,2022,IBO,3857,ID-BCR9-SA: Salmon-Challis National Forest,2,2
+ID,9,ID-BCR9-SH,2022,IBO,5288,ID-BCR9-SH: Bureau of Land Management - Shoshone Field Office,3,3
+ID,9,ID-BCR9-SW,2022,IBO,2175,ID-BCR9-SW: Sawtooth National Forest,3,3
+ID,10,ID-BCR10-BI,2022,IBO,1916,ID-BCR10-BI: Bitterroot National Forest,2,2
+ID,10,ID-BCR10-BO,2022,IBO,8778,ID-BCR10-BO: Boise National Forest,8,9
+ID,10,ID-BCR10-CL,2022,IBO,1946,ID-BCR10-CL: Clearwater National Forest - Roaded/Managed,5,5
+ID,10,ID-BCR10-CR,2022,IBO,5036,ID-BCR10-CR: Clearwater National Forest - Roadless/Wilderness,2,2
+ID,10,ID-BCR10-CT,2022,BCR,7752,ID-BCR10-CT: Caribou-Targhee National Forest,3,3
+ID,10,ID-BCR10-IP,2022,IBO,8660,ID-BCR10-IP: Idaho Panhandle National Forest - Roaded/Managed,13,13
+ID,10,ID-BCR10-IR,2022,IBO,3155,ID-BCR10-IR: Idaho Panhandle National Forest - Roadless/Wilderness,2,2
+ID,10,ID-BCR10-KO,2022,IBO,169,ID-BCR10-KO: Kootenai National Forest,2,2
+ID,10,ID-BCR10-NP,2022,IBO,2864,ID-BCR10-NP: Nez Perce National Forest - Roaded/Managed,6,6
+ID,10,ID-BCR10-NR,2022,IBO,6370,ID-BCR10-NR: Nez Perce National Forest - Roadless/Wilderness,2,2
+ID,10,ID-BCR10-PA,2022,IBO,9857,ID-BCR10-PA: Payette National Forest,10,10
+ID,10,ID-BCR10-SA,2022,IBO,13563,ID-BCR10-SA: Salmon-Challis National Forest,9,9
+ID,10,ID-BCR10-SW,2022,IBO,6302,ID-BCR10-SW: Sawtooth National Forest,6,6
+ID,16,ID-BCR16-CT,2022,BCR,831,ID-BCR16-CT: Caribou-Targhee National Forest,2,2
+ID,16,ID-BCR16-CT,2022,BCR,909,ID-BCR16-CT: Caribou-Targhee National Forest,2,2
+KS,18,KS-BCR18-AO,2022,BCR,34794,KS-BCR18-AO: All Other Lands,11,11
+KS,18,KS-BCR18-CM,2022,BCR,430,KS-BCR18-CM: Cimarron National Grassland,2,2
+KS,18,KS-BCR18-PL,2022,BCR,370,KS-BCR18-PL: Playas,11,11
+KS,18,KS-BCR18-RV,2022,BCR,1409,KS-BCR18-RV: Rivers,11,11
+KS,19,KS-BCR19-AO,2022,BCR,98649,KS-BCR19-AO: All Other Lands,11,10
+KS,19,KS-BCR19-PL,2022,BCR,176,KS-BCR19-PL:  Playas,11,11
+KS,19,KS-BCR19-RV,2022,BCR,10523,KS-BCR19-RV: Rivers,11,10
+MT,10,MT-BCR10-BE,2022,IBO,7697,MT-BCR10-BE: Beaverhead-Deerlodge National Forest - Roaded/Managed,7,7
+MT,10,MT-BCR10-BI,2022,IBO,2324,MT-BCR10-BI: Bitterroot National Forest - Roaded/Managed,6,6
+MT,10,MT-BCR10-BM,2022,IBO,1356,MT-BCR10-BM: Bureau of Land Management - Missoula/Butte,4,4
+MT,10,MT-BCR10-BR,2022,IBO,8236,MT-BCR10-BR: Beaverhead-Deerlodge National Forest - Roadless/Wilderness,3,3
+MT,10,MT-BCR10-BS,2022,IBO,3447,MT-BCR10-BS: Bureau of Land Management - southwestern Montana,3,3
+MT,10,MT-BCR10-BW,2022,IBO,2763,MT-BCR10-BW: Bitterroot National Forest - Roadless/Wilderness,2,2
+MT,10,MT-BCR10-CR,2022,IBO,1783,MT-BCR10-CR: Custer National Forest - Roadless/Wilderness,2,1
+MT,10,MT-BCR10-CU,2022,IBO,779,MT-BCR10-CU: Custer National Forest - Roaded/Managed,3,3
+MT,10,MT-BCR10-FL,2022,IBO,4945,MT-BCR10-FL: Flathead National Forest - Roaded/Managed,6,6
+MT,10,MT-BCR10-FR,2022,IBO,6410,MT-BCR10-FR: Flathead National Forest - Roadless/Wilderness,2,1
+MT,10,MT-BCR10-GA,2022,IBO,3479,MT-BCR10-GA: Gallatin National Forest - Roaded/Managed,6,6
+MT,10,MT-BCR10-GR,2022,IBO,5787,MT-BCR10-GR: Gallatin National Forest - Roadless/Wilderness,2,1
+MT,10,MT-BCR10-HE,2022,IBO,3024,MT-BCR10-HE: Helena National Forest - Roaded/Managed,6,6
+MT,10,MT-BCR10-HR,2022,IBO,2248,MT-BCR10-HR: Helena National Forest - Roadless/Wilderness,2,2
+MT,10,MT-BCR10-KO,2022,IBO,7239,MT-BCR10-KO: Kootenai National Forest - Roaded/Managed,23,23
+MT,10,MT-BCR10-KR,2022,IBO,1887,MT-BCR10-KR: Kootenai National Forest - Roadless/Wilderness,2,2
+MT,10,MT-BCR10-LC,2022,IBO,2778,MT-BCR10-LC: Lewis and Clark National Forest - Roaded/Managed,6,6
+MT,10,MT-BCR10-LO,2022,IBO,7742,MT-BCR10-LO: Lolo National Forest - Roaded/Managed,7,7
+MT,10,MT-BCR10-LR,2022,IBO,5007,MT-BCR10-LR: Lewis and Clark National Forest - Roadless/Wilderness,2,2
+MT,10,MT-BCR10-LW,2022,IBO,3859,MT-BCR10-LW: Lolo National Forest - Roadless/Wilderness,2,2
+MT,10,MT-BCR10-ON,2022,IBO,75417,MT-BCR10-ON: All Other Lands,6,6
+MT,11,MT-BCR11-AO,2022,IBO,62631,MT-BCR11-AO: All Other Lands,9,9
+MT,11,MT-BCR11-BN,2022,IBO,1588,MT-BCR11-BN: Bureau of Land Management - North Valley,9,9
+MT,11,MT-BCR11-BO,2022,IBO,6826,MT-BCR11-BO: Bureau of Land Management - Other,9,9
+MT,11,MT-BCR11-FT,2022,IBO,12370,Mt-BCR11-FT: USFWS and Tribal Lands in BCR11,2,2
+MT,17,MT-BCR17-AO,2022,IBO,102779,MT-BCR17-AO: All Other Lands,9,9
+MT,17,MT-BCR17-BL,2022,IBO,25013,MT-BCR17-BL: Bureau of Land Management,10,10
+MT,17,MT-BCR17-CU,2022,IBO,2649,MT-BCR17-CU: Custer National Forest,3,3
+MT,17,MT-BCR17-LC,2022,IBO,867,MT-BCR17-LC: Lewis and Clark National Forest,4,4
+MT,17,MT-BCR17-RF,2022,IBO,8610,MT-BCR17-RF: USFWS and River Lands in BCR17,2,2
+ND,17,ND-BCR17-AT,2022,BCR,50236,ND-BCR17-AT: All Other Lands,8,8
+ND,17,ND-BCR17-BM,2022,BCR,165,ND-BCR17-BM: Bureau of Land Management,6,6
+ND,17,ND-BCR17-KR,2022,BCR,5,ND-BCR17-KR: Knife River Indian Villages National Historic Site,5,5
+ND,17,ND-BCR17-MG,2022,BCR,4133,ND-BCR17-MG: Little Missouri National Grassland,5,5
+ND,17,ND-BCR17-RG,2022,BCR,20,ND-BCR17-RG: Cedar River National Grassland,5,5
+ND,17,ND-BCR17-TN,2022,BCR,100,ND-BCR17-TN: Theodore Roosevelt National Park - North Unit,6,6
+ND,17,ND-BCR17-TS,2022,BCR,193,ND-BCR17-TS: Theodore Roosevelt National Park - South Unit,6,6
+ND,18,NE-BCR18-GR,2022,BCR,34896,NE-BCR18-GR: All Other Lands With Grassland,15,15
+NE,17,NE-BCR17-LG,2022,BCR,350,NE-BCR17-LG: Oglala National Grassland,2,2
+NE,17,NE-BCR17-ON,2022,BCR,4553,NE-BCR17-ON: All Other Lands,3,3
+NE,18,NE-BCR18-AF,2022,BCR,12,NE-BCR18-AF: Agate Fossil Beds National Monument,4,4
+NE,18,NE-BCR18-GG,2022,BCR,31,NE-BCR18-GG: Oglala National Grassland,2,2
+NE,18,NE-BCR18-RD,2022,BCR,200,NE-BCR18-RD: Nebraska National Forest - Pine Ridge,2,2
+NE,18,NE-BCR18-SB,2022,BCR,13,NE-BCR18-SB: Scotts Bluff National Monument,4,4
+NE,19,NE-BCR19-BE,2022,BCR,361,NE-BCR19-BE: Nebraska National Forest - Bessey District,2,2
+NE,19,NE-BCR19-SG,2022,BCR,468,NE-BCR19-SG: Samuel R. McKelvie National Forest,2,2
+NV,9,NV-BCR9-BM,2022,GBBO,35811,NV-BCR9-BM: Bureau of Land Management - Battle Mountain District,15,15
+NV,9,NV-BCR9-CC,2022,GBBO,19269,NV-BCR9-CC: Bureau of Land Management - Carson City District,8,8
+NV,9,NV-BCR9-EK,2022,GBBO,30072,"NV-BCR9-EK: Bureau of Land Management - Elko, Twin Falls, and Boise Districts",14,14
+NV,9,NV-BCR9-EY,2022,GBBO,45375,NV-BCR9-EY: Bureau of Land Management - Ely District,15,15
+NV,9,NV-BCR9-HT,2022,GBBO,22324,NV-BCR9-HT: Humboldt-Toiyabe National Forest,7,9
+NV,9,NV-BCR9-NC,2022,GBBO,5566,NV-BCR9-NC: Bureau of Land Management - Northern California District,4,4
+NV,9,NV-BCR9-SN,2022,GBBO,659,NV-BCR9-SN: Bureau of Land Management - Southern Nevada District,3,3
+NV,9,NV-BCR9-WI,2022,GBBO,33881,NV-BCR9-WI: Bureau of Land Management - Winnemucca District,15,15
+NV,15,NV-BCR15-HT,2022,GBBO,616,NV-BCR15-HT: Humboldt-Toiyabe National Forest,3,3
+NV,33,NV-BCR33-HT,2022,GBBO,1313,NV-BCR33-HT: Humboldt-Toiyabe National Forest,3,3
+OK,18,OK-BCR18-AO,2022,BCR,10556,OK-BCR18-AO: All Other Lands,6,6
+OK,18,OK-BCR18-PL,2022,BCR,105,OK-BCR18-PL: Playas,2,2
+OK,18,OK-BCR18-RV,2022,BCR,533,OK-BCR18-RV: Rivers,2,2
+OK,19,OK-BCR19-AO,2022,BCR,68616,OK-BCR19-AO: All Other Lands,8,8
+OK,19,OK-BCR19-PL,2022,BCR,14,OK-BCR19-PL: Playas,2,2
+OK,19,OK-BCR19-RV,2022,BCR,6531,OK-BCR19-RV: Rivers,2,2
+OR,9,OR-BCR9-BU,2022,KBO,12137,OR-BCR9-BU: Bureau of Land Management - Burns District,8,8
+OR,9,OR-BCR9-LA,2022,KBO,13783,OR-BCR9-LA: Bureau of Land Management - Lakeview and Medford Districts,8,8
+OR,9,OR-BCR9-PR,2022,KBO,3617,OR-BCR9-PR: Bureau of Land Management - Prineville District,8,8
+OR,9,OR-BCR9-VA,2022,KBO,18002,OR-BCR9-VA: Bureau of Land Management - Vale District,8,8
+OR,10,OR-BCR10-BU,2022,KBO,1131,OR-BCR10-BU: Bureau of Land Management- Burns District,8,8
+OR,10,OR-BCR10-PR,2022,KBO,2549,OR-BCR10-PR:Bureau of Land Management- Prineville District,8,8
+OR,10,OR-BCR10-VA,2022,KBO,2457,OR-BCR10-VA:Bureau of Land Management- Vale District,8,8
+SD,17,SD-BCR17-AT,2022,BCR,92764,SD-BCR17-AT: All Other Lands,12,12
+SD,17,SD-BCR17-BI,2022,BCR,5385,SD-BCR17-BI: Black Hills National Forest,3,3
+SD,17,SD-BCR17-BM,2022,BCR,831,SD-BCR17-BM: Bureau of Land Management,7,7
+SD,17,SD-BCR17-BN,2022,BCR,399,SD-BCR17-BN: Badlands National Park - North Unit,6,6
+SD,17,SD-BCR17-GG,2022,BCR,2346,SD-BCR17-GG: Buffalo Gap National Grassland,2,2
+SD,17,SD-BCR17-JC,2022,BCR,5,SD-BCR17-JC: Jewel Cave National Monument,4,4
+SD,17,SD-BCR17-MR,2022,BCR,6,SD-BCR17-MR: Mount Rushmore National Monument,6,6
+SD,17,SD-BCR17-PG,2022,BCR,482,SD-BCR17-PG: Fort Pierre National Grassland,2,2
+SD,17,SD-BCR17-RG,2022,BCR,613,SD-BCR17-RG: Grand River National Grassland,5,5
+SD,17,SD-BCR17-UF,2022,BCR,326,SD-BCR17-UF: Custer National Forest,4,4
+SD,17,SD-BCR17-WC,2022,BCR,136,SD-BCR17-WC: Wind Cave National Park,6,6
+UT,9,UT-BCR9-AO,2022,UDWR,34037,UT-BCR9-AO: All Other Lands,40,42
+UT,9,UT-BCR9-AO,2022,UDWR,34636,UT-BCR9-AO: All Other Lands,40,42
+UT,9,UT-BCR9-AP,2022,DOD,70,UT-BCR9-AP: Department of Defense - APG Impact Area,6,6
+UT,9,UT-BCR9-CC,2022,IBO,8046,UT-BCR9-CC: Bureau of Land Management - Cedar City Field Office,4,4
+UT,9,UT-BCR9-CT,2022,BCR,54,UT-BCR9-CT: Caribou-Targhee National Forest,2,2
+UT,9,UT-BCR9-DD,2022,DOD,1986,UT-BCR9-DD: Department of Defense - Other Lands,6,5
+UT,9,UT-BCR9-DI,2022,IBO,1008,UT-BCR9-DI: Dixie National Forest,2,2
+UT,9,UT-BCR9-FI,2022,BCR,18326,UT-BCR9-FI: Bureau of Land Management - Fillmore Field Office,5,5
+UT,9,UT-BCR9-FL,2022,IBO,590,UT-BCR9-FL: Fishlake National Forest,2,2
+UT,9,UT-BCR9-MU,2022,DOD,1162,UT-BCR9-MU: Department of Defense - Mudflats,2,2
+UT,9,UT-BCR9-RI,2022,IBO,617,UT-BCR9-RI: Bureau of Land Management - Richfield Field Office,2,2
+UT,9,UT-BCR9-SG,2022,IBO,232,UT-BCR9-SG: Bureau of Land Management - Saint George Field Office,2,2
+UT,9,UT-BCR9-SL,2022,BCR,12340,UT-BCR9-SL: Bureau of Land Management - Salt Lake Field Office,5,5
+UT,9,UT-BCR9-SW,2022,IBO,364,UT-BCR9-SW: Sawtooth National Forest,3,3
+UT,9,UT-BCR9-TS,2022,DOD,128,UT-BCR9-TS: Department of Defense - Target S Impact Area,6,6
+UT,9,UT-BCR9-UR,2022,DOD,126,UT-BCR9-UR: Department of Defense - UTG Impact Area,6,6
+UT,9,UT-BCR9-UT,2022,DOD,522,UT-BCR9-UT: Department of Defense - UTTR Impact Areas,5,4
+UT,9,UT-BCR9-WA,2022,BCR,1648,UT-BCR9-WA: Uinta-Wasatch-Cache National Forest,3,3
+UT,10,UT-BCR10-AO,2022,UDWR,1968,UT-BCR10-AO: All Other Lands,15,14
+UT,10,UT-BCR10-AS,2022,BCR,96,UT-BCR10-AS: Ashley National Forest,3,3
+UT,10,UT-BCR10-SL,2022,BCR,642,UT-BCR10-SL: Bureau of Land Management - Salt Lake Field Office,3,3
+UT,10,UT-BCR10-VE,2022,BCR,268,UT-BCR10-VE: Bureau of Land Management - Vernal Field Office,2,2
+UT,10,UT-BCR10-WA,2022,BCR,49,UT-BCR10-WA: Uinta-Wasatch-Cache National Forest,3,3
+UT,16,UT-BCR16-AH,2022,BCR,5166,UT-BCR16-AH: Ashley National Forest,5,5
+UT,16,UT-BCR16-AO,2022,UDWR,45439,UT-BCR16-AO: All Other Lands,40,40
+UT,16,UT-BCR16-AO,2022,UDWR,48838,UT-BCR16-AO: All Other Lands,40,40
+UT,16,UT-BCR16-CC,2022,IBO,450,UT-BCR16-CC: Bureau of Land Management - Cedar City Field Office,2,2
+UT,16,UT-BCR16-DI,2022,IBO,5934,UT-BCR16-DI: Dixie National Forest,8,8
+UT,16,UT-BCR16-FI,2022,BCR,40,UT-BCR16-FI: Bureau of Land Management - Fillmore Field Office,2,2
+UT,16,UT-BCR16-FL,2022,IBO,6670,UT-BCR16-FL: Fishlake National Forest,8,8
+UT,16,UT-BCR16-GS,2022,IBO,7564,UT-BCR16-GS: Bureau of Land Management - Grand Staircase-Escalante National Monument,3,3
+UT,16,UT-BCR16-KA,2022,IBO,2267,UT-BCR16-KA: Bureau of Land Management - Kanab Field Office,4,4
+UT,16,UT-BCR16-MA,2022,IBO,5280,UT-BCR16-MA: Manti-La Sal National Forest,9,9
+UT,16,UT-BCR16-MN,2022,IBO,7321,UT-BCR16-MN: Bureau of Land Management - Monticello Field Office,3,3
+UT,16,UT-BCR16-MO,2022,BCR,7725,UT-BCR16-MO: Bureau of Land Management - Moab Field Office,3,3
+UT,16,UT-BCR16-PR,2022,IBO,10216,UT-BCR16-PR: Bureau of Land Management - Price Field Office,3,3
+UT,16,UT-BCR16-RI,2022,IBO,8068,UT-BCR16-RI: Bureau of Land Management - Richfield Field Office,3,3
+UT,16,UT-BCR16-SA,2022,IBO,307,UT-BCR16-SA: Manti-La Sal National Forest - Sanpitch,3,3
+UT,16,UT-BCR16-SG,2022,IBO,1904,UT-BCR16-SG: Bureau of Land Management - Saint George Field Office,2,2
+UT,16,UT-BCR16-SL,2022,BCR,87,UT-BCR16-SL: Bureau of Land Management - Salt Lake Field Office,2,2
+UT,16,UT-BCR16-VE,2022,BCR,6612,UT-BCR16-VE: Bureau of Land Management - Vernal Field Office,4,4
+UT,16,UT-BCR16-VE,2022,BCR,6704,UT-BCR16-VE: Bureau of Land Management - Vernal Field Office,4,4
+UT,16,UT-BCR16-WA,2022,BCR,9913,UT-BCR16-WA: Uinta-Wasatch-Cache National Forest,3,3
+UT,33,UT-BCR33-AO,2022,UDWR,65,UT-BCR33-AO: All Other Lands,15,15
+UT,33,UT-BCR33-SG,2022,IBO,388,UT-BCR33-SG: Bureau of Land Management - Saint George Field Office,2,2
+WY,9,WY-BCR9-WY,2022,BCR,119,WY-BCR9-WY: Caribou-Targhee National Forest,2,2
+WY,10,WY-BCR10-AO,2022,BCR,52161,WY-BCR10-AO: All Other Lands,15,15
+WY,10,WY-BCR10-AS,2022,BCR,540,WY-BCR10-AS: Ashley National Forest,2,2
+WY,10,WY-BCR10-BE,2022,BCR,3034,WY-BCR10-BE: Bridger-Teton National Forest - Roaded/Managed,7,7
+WY,10,WY-BCR10-BH,2022,BCR,57,WY-BCR10-BH: Bighorn Canyon National Recreation Area,2,2
+WY,10,WY-BCR10-BI,2022,WYNDD,4712,WY-BCR10-BI: Bighorn National Forest,3,3
+WY,10,WY-BCR10-BR,2022,BCR,11364,WY-BCR10-BR: Bridger-Teton National Forest - Roadless/Wilderness,2,2
+WY,10,WY-BCR10-BU,2022,BCR,547,WY-BCR10-BU: Bureau of Land Management - Buffalo Field Office,2,2
+WY,10,WY-BCR10-CA,2022,BCR,2509,WY-BCR10-CA: Bureau of Land Management - Casper Field Office,3,3
+WY,10,WY-BCR10-CO,2022,BCR,4704,WY-BCR10-CO: Bureau of Land Management - Cody Field Office,4,4
+WY,10,WY-BCR10-CT,2022,BCR,1397,WY-BCR10-CT: Caribou-Targhee National Forest,2,2
+WY,10,WY-BCR10-GR,2022,BCR,856,WY-BCR10-GR: Grand Teton National Park,2,2
+WY,10,WY-BCR10-KE,2022,BCR,5733,WY-BCR10-KE: Bureau of Land Management - Kemmerer Field Office,5,5
+WY,10,WY-BCR10-LA,2022,BCR,9829,WY-BCR10-LA: Bureau of Land Management - Lander Field Office,7,7
+WY,10,WY-BCR10-MB,2022,WYNDD,773,WY-BCR10-MB: Medicine Bow National Forest,2,2
+WY,10,WY-BCR10-PI,2022,BCR,3687,WY-BCR10-PI: Bureau of Land Management - Pinedale Field Office,8,8
+WY,10,WY-BCR10-RA,2022,BCR,13954,WY-BCR10-RA: Bureau of Land Management - Rawlins Field Office,10,10
+WY,10,WY-BCR10-RO,2022,BCR,15152,WY-BCR10-RO: Bureau of Land Management - Rock Springs Field Office,9,9
+WY,10,WY-BCR10-SE,2022,BCR,2101,WY-BCR10-SE: Shoshone National Forest - Roaded/Managed,5,5
+WY,10,WY-BCR10-SR,2022,BCR,8311,WY-BCR10-SR: Shoshone National Forest - Roadless/Wilderness,4,4
+WY,10,WY-BCR10-WA,2022,BCR,33,WY-BCR10-WA: Wasatch National Forest,3,3
+WY,10,WY-BCR10-WO,2022,BCR,8467,WY-BCR10-WO: Bureau of Land Management - Worland Field Office,7,7
+WY,10,WY-BCR10-WR,2022,BCR,7819,WY-BCR10-WR: Wind River Reservation,4,4
+WY,10,WY-BCR10-YE,2022,BCR,7592,WY-BCR10-YE: Yellowstone National Park,4,4
+WY,16,WY-BCR16-AO,2022,BCR,5438,WY-BCR16-AO: All Other Lands,5,5
+WY,16,WY-BCR16-BL,2022,BCR,647,WY-BCR16-BL: Bureau of Land Management,2,2
+WY,16,WY-BCR16-MB,2022,WYNDD,5329,WY-BCR16-MB: Medicine Bow National Forest,4,4
+WY,16,WY-BCR16-WA,2022,BCR,180,WY-BCR16-WA: Wasatch National Forest,3,3
+WY,17,WY-BCR17-AO,2022,BCR,52186,WY-BCR17-AO: All Other Lands,12,12
+WY,17,WY-BCR17-BH,2022,BCR,1085,WY-BCR17-BH: Black Hills National Forest,3,3
+WY,17,WY-BCR17-BU,2022,BCR,2653,WY-BCR17-BU: Bureau of Land Management - Buffalo Field Office,3,3
+WY,17,WY-BCR17-CA,2022,BCR,2695,WY-BCR17-CA: Bureau of Land Management - Casper Field Office,3,3
+WY,17,WY-BCR17-NE,2022,BCR,1025,WY-BCR17-NE: Bureau of Land Management - Newcastle Field Office,2,2
+WY,17,WY-BCR17-TB,2022,WYNDD,4520,WY-BCR17-TB: Thunder Basin National Grassland,6,6
+WY,18,WY-BCR18-AO,2022,BCR,12064,WY-BCR18-AO: All Other Lands,12,12
+WY,18,WY-BCR18-BL,2022,BCR,171,WY-BCR18-BL: Bureau of Land Management,2,2
+WY,18,WY-BCR18-DO,2022,BCR,23,WY-BCR18-DO: Department of Defense,2,2

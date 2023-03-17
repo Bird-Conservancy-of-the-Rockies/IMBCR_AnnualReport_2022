@@ -4,6 +4,8 @@
 
 In 2022, the IMBCR program’s area of inference encompassed four entire states (Colorado, Montana, Utah, and Wyoming) and portions of 11 additional states (Arizona, California, Idaho, Kansas, Nebraska, Nevada, New Mexico, North Dakota, Oklahoma, Oregon, and South Dakota). We surveyed across US Forest Service (USFS) Regions 1, 2, and 4 and in portions of Region 3; all of the Badlands and Prairies Bird Conservation Region (BCR 17), and portions of nine other BCRs: Great Basin (9), Northern Rockies (10), Prairie Potholes (11), Sierra Nevada (15), Southern Rockies/Colorado Plateau (16), Shortgrass Prairie (18), Central Mixed Grass Prairie (19), Sonoran and Mojave Deserts (33), and Sierra Madre Occidental (34).
 
+![Spatial extent of sampled Bird Conservation Regions using the IMBCR design, 2022](IMBCR_Extent_Map_2022.png){#fig-extent}
+
 ## Sampling Design
 
 ### Sampling Frame and Stratification
@@ -16,13 +18,15 @@ We define strata based on areas to which IMBCR partners wanted to make inference
 
 We define sampling units as 1 km² cells, each containing 16 evenly spaced sample points, 250 meters apart (Figure 3). We define potential sampling units by superimposing a uniform grid of cells over each state in the study area. We then assign each cell to a stratum using ArcGIS version 10.X and higher (Environmental Systems Research Institute, 2017). For all stratifications developed after 2012, we use the United States National Grid (USNG), a nonproprietary alphanumeric referencing system derived from the Military Grid Reference System that was created by the Federal Geographic Data Committee.
 
+![Example 1 km² sampling unit in the IMBCR design.](IMBCR-sampling-unit.png){#fig-sampling-unit width=50%}
+
 ### Sample Selection
 
 Within each stratum, we use generalized random-tessellation stratification (GRTS), a spatially balanced sampling algorithm, to select sampling units (Stevens Jr. & Olsen, 2004). The GRTS design has useful properties with respect to long-term monitoring of birds at large spatial scales including:
 
-•	Spatially balanced sampling is generally more efficient than simple random sampling of natural resources (Stevens Jr. & Olsen, 2004). Incorporating information about spatial autocorrelation in the data can increase precision in density estimates.
+- Spatially balanced sampling is generally more efficient than simple random sampling of natural resources (Stevens Jr. & Olsen, 2004). Incorporating information about spatial autocorrelation in the data can increase precision in density estimates.
 
-•	All sampling units in the sampling frame are ordered, such that any set of consecutively numbered units is a spatially well-balanced sample (Stevens Jr. & Olsen, 2004). In the case of fluctuating budgets, IMBCR partners can adjust the sampling effort among years within each stratum while still preserving a random, spatially balanced sampling design.
+- All sampling units in the sampling frame are ordered, such that any set of consecutively numbered units is a spatially well-balanced sample (Stevens Jr. & Olsen, 2004). In the case of fluctuating budgets, IMBCR partners can adjust the sampling effort among years within each stratum while still preserving a random, spatially balanced sampling design.
 
 A minimum of two sampling units within each stratum are required to estimate the variances of population parameters. However, reliable stratum-level occupancy estimates require larger sample sizes, with a minimum of approximately 8-10 samples per stratum. Additional samples may be required for strata comprising large geographic areas. Because we estimate regional density and occupancy using an area weighted mean, adding more samples to a particular stratum does not bias the overall estimate, it simply increases the precision. After the initial two sampling units were selected, the remaining allocation of sampling effort among strata was based on the priorities of the funding partners.
 
@@ -38,7 +42,7 @@ Observers considered all non-independent detections of birds (i.e., flocks or pa
 
 At the start and end of each survey, observers recorded time, ambient temperature, cloud cover, precipitation, and wind speed. Observers navigated to each point using hand-held Global Positioning System units. Before beginning each six-minute count, surveyors recorded vegetation data within a 50m radius of the point via ocular estimation. Vegetation data included the dominant habitat type and relative abundance, percent cover and mean height of trees and shrubs by species, grass height, and ground cover. Observers recorded vegetation data quietly to allow birds time to return to their normal habits prior to beginning each count.
 
-For more detailed information about survey methods and vegetation data collection protocols, refer to Bird Conservancy’s Field Protocol for Spatially Balanced Sampling of Landbird Populations on our Avian Data Center website at http://rmbo.org/v3/avian/DataCollection.aspx. You will also find links to past and current protocols and data sheets.
+For more detailed information about survey methods and vegetation data collection protocols, refer to Bird Conservancy’s Field Protocol for Spatially Balanced Sampling of Landbird Populations on our [Avian Data Center](http://rmbo.org/v3/avian/DataCollection.aspx). You will also find links to past and current protocols and data sheets.
 
 ## Data Analysis
 
@@ -58,17 +62,21 @@ All points within a grid cell shared a mean abundance to account for the lack of
 
 We derived density at the point count location by dividing the estimated abundance by the area of the point count circle (see Observation process section below) and multiplying by cluster size. We derived stratum-level density estimates by averaging all point-level density estimates within each stratum, and we took the area-weighted average of strata estimates to obtain superstratum estimates.
 
-Observation process
+**Observation process**
 
-We estimated the probability of detecting an independent cluster of individuals by fitting distance functions to the distance data collected during surveys (Buckland et al. 2001). We fit four detection models including: 1) half-normal constant (HN(.)), 2) hazard rate constant (Haz(.)), 3) half-normal year (HN(t)), and 4) hazard rate year (Haz(t)).
+We estimated the probability of detecting an independent cluster of individuals by fitting distance functions to the distance data collected during surveys (Buckland et al. 2001). We fit four detection models including:  
+1. half-normal constant (HN(.))  
+2. hazard rate constant (Haz(.))  
+3. half-normal year (HN(t))  
+4. hazard rate year (Haz(t))
 
 We removed the furthest 10% of observed detection distances from the data set and binned the remaining detections into 10 evenly spaced distance classes. The furthest remaining detection distance became the radius of the point count circle with which we estimated density.
 
-Detection model selection
+**Detection model selection**
 
 To minimize computing time but find the most parsimonious detection function, we fit detection-only models to the distance data, using the four model structures described above. We used the Watanabe-Akaike Information Criterion (WAIC; Watanabe 2010, Hooten and Hobbs 2015) to select the most parsimonious detection structure and then used that structure for detection probabilities in the full model to estimate density and abundance.
 
-Trend Estimates
+**Trend Estimates**
 
 We estimated trends for individual strata by calculating the least-squares regression mean and standard errors for the intercept and slope of the log densities across the monitoring period. We calculated these parameters for every Bayesian iteration to account for uncertainty around density estimates.
 
@@ -90,6 +98,6 @@ Our application of the multi-scale model was analogous to a within-season robust
 
 ### Automated Analysis
 
-We recently updated our analytical methods and are using Bayesian hierarchical models specifically designed for analysis of IMBCR data. We performed all data and output manipulation in R (R Core Team, 2019) and model fitting in JAGS (Plummer 2003, 2017) using the R package jagsUI (Kellner 2018). The R code called the raw data from the IMBCR Structured Query Language (SQL) server database and reformatted the data into a form usable with the JAGS code. We allowed the input of all data collected in a manner consistent with the IMBCR design to increase the number of detections available for estimating global detection rates for population density and site occupancy. The R code provided an automated framework for combining stratum-level estimates of population density and site occupancy at multiple spatial scales, as well as estimating the standard deviations and credible intervals for the combined estimates.
+In 2019, we updated our analytical methods to use Bayesian hierarchical models specifically designed for analysis of IMBCR data. We performed all data and output manipulation in R (R Core Team, 2022) and model fitting in JAGS (Plummer 2003, 2017) using the R package jagsUI (Kellner 2018). The R code called the raw data from the IMBCR Structured Query Language (SQL) server database and reformatted the data into a form usable with the JAGS code. We allowed the input of all data collected in a manner consistent with the IMBCR design to increase the number of detections available for estimating global detection rates for population density and site occupancy. The R code provided an automated framework for combining stratum-level estimates of population density and site occupancy at multiple spatial scales, as well as estimating the standard deviations and credible intervals for the combined estimates.
 
-We fit initial models to all species with at least 30 detections for density estimation and 10 detections for occupancy estimation. For density estimation, we fit the full model after determining whether there were enough detections based on results from the detection-only model fits. In some cases for both density and occupancy estimation, it was necessary to use a less parsimonious detection structure or simplified model structure to facilitate model convergence. We currently maintain version control of the automated analysis code in the Bird Conservancy repository (Atlassian Stash, version 3.6.1).
+We fit initial models to all species with at least 30 detections for density estimation and 10 detections for occupancy estimation. For density estimation, we fit the full model after determining whether there were enough detections based on results from the detection-only model fits. In some cases for both density and occupancy estimation, it was necessary to use a less parsimonious detection structure or simplified model structure to facilitate model convergence. We currently maintain version control of the automated analysis code in the Bird Conservancy repository on www.github.com.

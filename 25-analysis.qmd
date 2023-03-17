@@ -1,155 +1,156 @@
 ---
 title: "Data Analysis"
-editor: visual
 ---
+
 ### Distance Analysis
 
 **Density and Abundance Estimation**
 
-**_State process_**
+***State process***
 
-We developed a zero-inflated N-mixture model (Royle 2004, Sillett et al. 2011) to estimate density and abundance for all strata and superstrata across all species with sufficient data. For a given species, the true occupancy state of point count location _k_ in grid _j_, stratum _i_, and year _t_ is distributed
+We developed a zero-inflated N-mixture model (Royle 2004, Sillett et al. 2011) to estimate density and abundance for all strata and superstrata across all species with sufficient data. For a given species, the true occupancy state of point count location $k$ in grid $j$, stratum $i$, and year $t$ is distributed
 
-_z_ijkt~Bern(ψ_i )._
+$$z_{ijkt} \sim Bern(ψ_{i}).$$
 
-The number of independent clusters of individuals, _N_, of a given species at point count location _k_ in grid _j_, stratum _i_, and year _t_ came from a Poisson distribution
+The number of independent clusters of individuals, $N$, of a given species at point count location $k$ in grid $j$, stratum $i$, and year $t$ came from a Poisson distribution
 
-_N_ijkt~Poisson(λ_ijt×z_ijkt)_
+$$N_{ijkt}\sim Poisson(λ_{ijt}×z_{ijkt})$$
 
-with mean _λ_ijt_. Abundances at all points within a grid came from a distribution with the same mean to account for the lack of independence between points, and we modeled _λ_ as a function of time to estimate trend for each stratum:
+with mean $λ_{ijt}$. Abundances at all points within a grid came from a distribution with the same mean to account for the lack of independence between points, and we modeled $λ$ as a function of time to estimate trend for each stratum:
 
-_log⁡(λ_ijt )=α_i+r_i (t-1)+ε_j_
+$$log⁡(λ_{ijt}) = α_{i}+r_{i} (t-1)+ε_{j},$$
 
-where _α_ and _r_ are stratum-specific intercepts and trends, respectively, and ε is a grid-specific random effect. 
+where $α$ and $r$ are stratum-specific intercepts and trends, respectively, and $ε$ is a grid-specific random effect.
 
-To avoid predicting species occurrence outside of observed ranges, we fixed ψ to 0 for all strata in which the species was never observed and used a prior informed by the observed proportion of grid-year combinations in a stratum in which the species was detected
+To avoid predicting species occurrence outside of observed ranges, we fixed $ψ$ to 0 for all strata in which the species was never observed and used a prior informed by the observed proportion of grid-year combinations in a stratum in which the species was detected
 
-_logit(ψ_i )~Normal(μ_(ψ_i ),σ_ψ^2),_
+$$logit(ψ_{i }) \sim Normal(μ_{ψ_i},σ_{ψ}^{2}),$$
 
-where _μ_(ψ_i )_ is the stratum-specific naïve occupancy and σ_ψ^2 is the annual variation in occupancy probabilities shared across strata. All other parameters had vague priors:
+where $μ_{ψ_i}$ is the stratum-specific naïve occupancy and $σ_{ψ}^{2}$ is the annual variation in occupancy probabilities shared across strata. All other parameters had vague priors:
 
-_α~Normal(0,4),_
-_exp⁡(r)~Uniform(0.25,1.75),_
-_ε~Normal(0,σ_ε^2),_
+$$α\sim Normal(0,4),$$ $$exp⁡(r) \sim Uniform(0.25,1.75),$$
+
+$$ε\sim Normal(0,σ_{ε}^{2}),$$
 
 and
 
-_σ_ε^2~Uniform(0,5)._
+$$σ_{ε}^{2}\sim Uniform(0,5).$$
 
-We derived density, _D_, at the point count location as
+We derived density, $D$, at the point count location as
 
-_D_ijkt=(N_ijkt×s)/A_c ,_
+$$D_{ijkt} = \frac {(N_{ijkt}×s)}{A_{c}} ,$$
 
-where _A_c_ is the area of the point count circle (see Observation process section below) and s is the cluster size, which was sampled from the distribution
+where $A_{c}$ is the area of the point count circle (see Observation process section below) and s is the cluster size, which was sampled from the distribution
 
-_s~Gamma(k,θ)+1,_
+$$s\sim Gamma(k,θ)+1,$$
 
-where _k_ and _θ_ were derived from the mean and variance of observed cluster sizes. We subtracted 1 from the mean when calculating _k_ and _θ_ and added 1 to the random variable to ensure cluster sizes were > 1. We derived stratum-level density estimates by averaging all point-level density estimates within each stratum, and we took the area-weighted average of strata estimates to obtain superstrata estimates. We required a minimum of 30 detections across the IMBCR effort to estimate density for each species.
+where $k$ and $θ$ were derived from the mean and variance of observed cluster sizes. We subtracted 1 from the mean when calculating $k$ and $θ$ and added 1 to the random variable to ensure cluster sizes were $\ge$ 1. We derived stratum-level density estimates by averaging all point-level density estimates within each stratum, and we took the area-weighted average of strata estimates to obtain superstrata estimates. We required a minimum of 30 detections across the IMBCR effort to estimate density for each species.
 
 **Observation process**
 
-We estimated the probability of detecting an independent cluster of individuals by fitting distance functions to the distance data collected during surveys (Buckland et al. 2001). We fit four detection models including: 1) half-normal constant (HN(.)), 2) hazard rate constant (Haz(.)), 3) half-normal year (HN(t)), and 4) hazard rate year (Haz(t)).
+We estimated the probability of detecting an independent cluster of individuals by fitting distance functions to the distance data collected during surveys (Buckland et al. 2001). We fit four detection models including: 1. half-normal constant $(HN(.))$\
+2. hazard rate constant $(Haz(.))$\
+3. half-normal year $(HN(t))$\
+4. hazard rate year $(Haz(t))$.
 
-We removed the furthest 10% of observed detection distances from the data set and binned the remaining detections into 10 evenly spaced distance classes. For half-normal functions, we calculated the detection probability, _p_, for each distance class, l, as:
+We removed the furthest 10% of observed detection distances from the data set and binned the remaining detections into 10 evenly spaced distance classes. For half-normal functions, we calculated the detection probability, $p$, for each distance class, l, as:
 
-_p_l=(2π∫_(c=b_l)^(c=b_(l+1))▒〖exp⁡(-(c^2/(2θ^2 )))c dc〗)/A_l ,_
+$$p_{l} = \frac {(2π∫_{c=b_{l}}^{c=b_{l+1}}exp⁡(-(\frac {c^2}{2θ^2} ))c dc)}{A_l}$$
 
-where _b_l_ and _b_(l+1)_ are the cutpoints for _l_, _θ_ is the half-normal shape parameter, and _A_l_ is the area of _l_. Because of the lack of an analytical solution to the integral of the hazard rate function, we calculated _p_ at the midpoint, _m_, of each distance class
+where $b_{l}$ and $b_{l+1}$ are the cutpoints for $l$, $θ$ is the half-normal shape parameter, and $A_{l}$ is the area of $l$. Because of the lack of an analytical solution to the integral of the hazard rate function, we calculated $p$ at the midpoint, $m$, of each distance class
 
-_p_l=1-exp⁡(-(m_l/a)^b )._
+$$p_{l} = 1-exp⁡ (-(\frac{ m_{l}}{a})^{b} )$$\*
 
 To allow detection probabilities to vary by year, we sampled year-specific shape parameters from hyperdistributions:
 
-_θ_t~Normal(μ_θ,σ_θ^2 ),_
-_a_t~Normal(μ_a,σ_a^2 ),_
+$$θ_{t}\sim Normal(μ_{θ},σ_{θ}^{2} ),$$
+
+$$a_{t}\sim Normal(μ_{a},σ_{a}^{2} ),$$
 
 and
 
-_b_t~Normal(μ_b,σ_b^2 ),_
+$$b_{t}\sim Normal(μ_{b},σ_{b}^{2} ),$$
 
 with priors of
 
-_μ_θ~Unif(0,1000),_
-_μ_a~Unif(0,500),_
-_σ_θ,σ_a,μ_b~Unif(0,100),_
+$$μ_{θ}\sim Unif(0,1000),$$ $$μ_{a}\sim Unif(0,500),$$
+
+$$σ_{θ},σ_{a},μ_{b}\sim Unif(0,100),$$
 
 and
 
-_σ_b~Unif(0,25)._
+$$σ_{b}\sim Unif(0,25).$$
 
 We then multiplied p_l by the proportional area of l to account for the probability that a cluster is within distance class l and obtain π_l, the probability a cluster is present within distance class l and is detected,
 
-_π_lt=(p_lt A_l)/(∑_(l=1)^L▒A_l )._
+$$π_{lt} = \frac {p_{lt} A_{l}}{∑_{l=1}^{L}A_{l}}.$$
 
-We calculated the overall capture probability, _p_cap_, as
+We calculated the overall capture probability, $p_{cap}$, as
 
-p_cap=∑_(l=1)^L▒π_l ,
+$$p_{cap} = ∑_{l=1}^{L}π_{l} ,$$
 
-and modeled the number of detections in each distance class at each point count location in year _t_ as
+and modeled the number of detections in each distance class at each point count location in year $t$ as
 
-_y_ijkt~Multinom(π_t,N_ijkt )._
+$$y_{ijkt}\sim Multinom(π_{t},N_{ijkt} ).$$
 
-**_Detection model selection_**
+***Detection model selection***
 
 To find the most parsimonious detection function while minimizing computing time, we fit detection-only models to the distance data, using the four model structures described above. We used the Watanabe-Akaike Information Criterion (WAIC; Watanabe 2010, Hooten and Hobbs 2015) to select the most parsimonious detection structure and then used that structure for detection probabilities in the full model to estimate density and abundance.
 
-**_Superstratum trends_**
+***Superstratum trends***
 
 We developed a post-hoc approach to estimate trends for superstrata. Using the rolled-up estimates of density for superstratum, i, we fit a general linear model (GLM) to the samples from each Bayesian iteration, m,
 
-log⁡(D ̂_itm )~α_im+r_im (t-1).
+$$log⁡(\hat{D}_{itm} )\sim α_{im}+r_{im} (t-1).$$ Fitting a GLM across iterations allowed us to incorporate uncertainty in trends due to uncertainty around density estimates, but it did not account for temporal variation. To incorporate this second form of variation, we sampled a random intercept $(α_{im})$ and slope $(\tilde{r}_{im})$ for each iteration using the mean and standard error estimated using the GLM and made inference on the distribution of the resampled values,
 
-Fitting a GLM across iterations allowed us to incorporate uncertainty in trends due to uncertainty around density estimates, but it did not account for temporal variation. To incorporate this second form of variation, we sampled a random intercept _(α ̃_im)_ and slope _(r ̃_im)_ for each iteration using the mean and standard error estimated using the GLM and made inference on the distribution of the resampled values,
-
-_α ̃_im~Normal(μ_(α_im ),SE_(α_im ))_
+$$\tilde{α}_{im} \sim Normal(μ_{α_{im}},SE_{α_{im}})$$
 
 and
 
-_r ̃_im~Normal(μ_(r_im ),SE_(r_im ))._
+$$\tilde{r}_{im}\sim Normal(μ_{r_{im}},SE_{r_{im}}).$$
 
 ### Occupancy Estimation
 
-Occupancy estimation is most commonly used to quantify the proportion of sample units (i.e., 1 km² cells) occupied by an organism (MacKenzie et al., 2002). The application of occupancy modeling requires multiple surveys of the sample unit in space or time to estimate a detection probability (MacKenzie et al., 2006). The detection probability adjusts the proportion of sites occupied to account for species that were present but undetected (MacKenzie et al., 2002). We used a removal design (MacKenzie et al., 2006) to estimate a detection probability for each species, in which we binned minutes one and two, minutes three and four, and minutes five and six to meet the assumption of a monotonic decline in the detection rates through time. After the target species was detected at a point, we set all subsequent sampling intervals at that point to “missing data” (MacKenzie et al., 2006). We required a minimum of ≥1 detection on 10 different transects across the IMBCR effort to estimate occupancy for each species.
+Occupancy estimation is most commonly used to quantify the proportion of sample units (i.e., 1 km² cells) occupied by an organism (MacKenzie et al., 2002). The application of occupancy modeling requires multiple surveys of the sample unit in space or time to estimate a detection probability (MacKenzie et al., 2006). The detection probability adjusts the proportion of sites occupied to account for species that were present but undetected (MacKenzie et al., 2002). We used a removal design (MacKenzie et al., 2006) to estimate a detection probability for each species, in which we binned minutes one and two, minutes three and four, and minutes five and six to meet the assumption of a monotonic decline in the detection rates through time. After the target species was detected at a point, we set all subsequent sampling intervals at that point to "missing data" (MacKenzie et al., 2006). We required a minimum of ≥1 detection on 10 different transects across the IMBCR effort to estimate occupancy for each species.
 
-The 16 points in each sampling unit served as spatial replicates for estimating the proportion of points occupied within the sampled sampling units. We used a Bayesian, multi-scale occupancy model (Nichols et al. 2008, Mordecai et al. 2011, Green et al. 2019) to estimate 1) the probability of detecting a species given presence (_p_), 2) the proportion of points occupied by a species given presence within sampled sampling units (_θ_) and 3) the proportion of sampling units occupied by a species (_ψ_). 
+The 16 points in each sampling unit served as spatial replicates for estimating the proportion of points occupied within the sampled sampling units. We used a Bayesian, multi-scale occupancy model (Nichols et al. 2008, Mordecai et al. 2011, Green et al. 2019) to estimate 1) the probability of detecting a species given presence ($p$), 2) the proportion of points occupied by a species given presence within sampled sampling units ($θ$) and 3) the proportion of sampling units occupied by a species ($ψ$).
 
-We truncated the data, using only detections <125 m from the sample points, except for species in Accipitriformes, Anseriformes, Falconiformes, Galliformes, Gruiformes, Pelecaniformes, Podicepidiformes, and Suliformes for which we used the maximum observed distance for each species. Truncating the data allowed us to use bird detections over a consistent plot size and ensured that the points were independent (points were spread 250 m apart), which in turn allowed us to estimate _θ_ (the proportion of points occupied within each sampling unit) (Pavlacky Jr., Blakesley, White, Hanni, & Lukacs, 2012). The interpretation of _θ_ for species for which we used maximum distances changes from occupancy to use because point count buffers overlap, but we chose this approach to provide estimates for a larger number of species.
+We truncated the data, using only detections \<125 m from the sample points, except for species in Accipitriformes, Anseriformes, Falconiformes, Galliformes, Gruiformes, Pelecaniformes, Podicepidiformes, and Suliformes for which we used the maximum observed distance for each species. Truncating the data allowed us to use bird detections over a consistent plot size and ensured that the points were independent (points were spread 250 m apart), which in turn allowed us to estimate $θ$ (the proportion of points occupied within each sampling unit) (Pavlacky Jr., Blakesley, White, Hanni, & Lukacs, 2012). The interpretation of $θ$ for species for which we used maximum distances changes from occupancy to use because point count buffers overlap, but we chose this approach to provide estimates for a larger number of species.
 
-We expected regional differences in the behavior, habitat use, and local abundance of species would correspond to regional variation in detection and the fraction of occupied points. Therefore, we estimated the proportion of sampling units occupied (_ψ_) for each stratum by estimating BCR by year specific estimates of detection (_p_) and point-level occupancy (_θ_). We fixed _p_ and _θ_ to _0_ for BCRs in which a particular species was never detected. Otherwise these parameters came from hyperdistributions,
+We expected regional differences in the behavior, habitat use, and local abundance of species would correspond to regional variation in detection and the fraction of occupied points. Therefore, we estimated the proportion of sampling units occupied ($ψ$) for each stratum by estimating BCR by year specific estimates of detection ($p$) and point-level occupancy ($θ$). We fixed $p$ and $θ$ to $0$ for BCRs in which a particular species was never detected. Otherwise these parameters came from hyperdistributions,
 
-_logit(p_(BCR,t) )~Normal(μ_(p_BCR ),σ_p^2)_
-
-and
-
-_logit(θ_(BCR,t) )~Normal(μ_(θ_BCR ),σ_θ^2),_
-
-where _μ_p_ and _μ_θ_ are BCR-specific means for detection and point-level occupancy, respectively, and _σ_p^2_ and _σ_θ^2_ are the annual variances shared across BCRs.
-
-We fixed _ψ_ to 0 for all strata in which the species was never detected. Otherwise, the true occupancy state _(z_(i,t))_ of a 1-km2 grid cell, _j_,  in a given year, _t_, in stratum _i_ was modeled as 
-
-_z_ijt~Bernoulli(ψ_it)_
+$$logit(p_{BCR,t}) \sim Normal(μ_{p_{BCR}},σ_{p}^{2})$$
 
 and
 
-_logit(ψ_it )~Normal(μ_(ψ_i ),σ_ψ^2),_
+$$logit(θ_{BCR,t})\sim Normal(μ_{θ_{BCR}},σ_{θ}^{2}),$$
 
-where _μ_(ψ_i )_ is the stratum-specific mean occupancy rate on the logit scale and _σ_ψ^2_ is the annual variance shared across all strata. As with density, we took an area-weighted mean of stratum-level occupancy estimates (i.e., _ψ_) to estimate superstratum-level occupancy probabilities.
+where $μ_{p}$ and $μ_{θ}$ are BCR-specific means for detection and point-level occupancy, respectively, and $σ_{p}^{2}$ and $σ_{θ}^{2}$ are the annual variances shared across BCRs.
 
-The true point-level occupancy state (_u_) was conditional on the grid-cell-level occupancy state (i.e., z = 1, occupied; z = 0, unoccupied), such that a point could only be occupied if the grid cell was occupied,
+We fixed $ψ$ to 0 for all strata in which the species was never detected. Otherwise, the true occupancy state $(z_{i,t})$ of a 1-km2 grid cell, $j$, in a given year, $t$, in stratum $i$ was modeled as
 
-_u_ijkt~Bernoulli(θ_(BCR,t)×z_ijt)._
+$$z_{ijt}\sim Bernoulli(ψ_{it})$$
 
-Finally, we modeled the observation process conditional on the point being occupied (i.e., _u_ = 1) as
+and
 
-_y_ijkt~Binomial(p_(BCR,t)×u_ijkt,J_ijkt),_
+$$logit(ψ_{it} )\sim Normal(μ_{ψ_i},σ_{ψ}^{2}),$$
 
-where y_ijkt are the observation data at point _k_ in year _t_ (_y_ =1, observed;  _y_ = 0, not observed) and _J_ijkt_ is the 2-minute interval in which the species was first detected (i.e., _J_ = 1, 1-2 minutes, _J_ = 2, 3-4 minutes, _J_ =3, 5-6 minutes or not detected). 
+where $μ_{ψ_i}$ is the stratum-specific mean occupancy rate on the logit scale and $σ_{ψ}^{2}$ is the annual variance shared across all strata. As with density, we took an area-weighted mean of stratum-level occupancy estimates (i.e., $ψ$) to estimate superstratum-level occupancy probabilities.
 
-Our application of the multi-scale model was analogous to a within-season robust design (Pollock, 1982) where the two-minute intervals at each point were the secondary samples for estimating _p_ and the points were the primary samples for estimating _θ_ (Nichols et al., 2008; Pavlacky Jr. et al., 2012). We considered both _p_ and _θ_ to be nuisance variables that were important for generating unbiased estimates of _ψ_. _θ_ can be considered an availability parameter or the probability a species was present and available for sampling at the points (Nichols et al., 2008; Pavlacky Jr. et al., 2012). 
+The true point-level occupancy state ($u$) was conditional on the grid-cell-level occupancy state (i.e., z = 1, occupied; z = 0, unoccupied), such that a point could only be occupied if the grid cell was occupied,
+
+$$u_{ijkt}\sim Bernoulli(θ_{BCR,t}×z_{ijt}).$$
+
+Finally, we modeled the observation process conditional on the point being occupied (i.e., $u$ = 1) as
+
+$$y_{ijkt}\sim Binomial(p_{BCR,t}×u_{ijkt},J_{ijkt}),$$
+
+where y_ijkt are the observation data at point $k$ in year $t$ ($y$ =1, observed; $y$ = 0, not observed) and $J_{ijkt}$ is the 2-minute interval in which the species was first detected (i.e., $J$ = 1, 1-2 minutes, $J$ = 2, 3-4 minutes, $J$ =3, 5-6 minutes or not detected).
+
+Our application of the multi-scale model was analogous to a within-season robust design (Pollock, 1982) where the two-minute intervals at each point were the secondary samples for estimating $p$ and the points were the primary samples for estimating $θ$ (Nichols et al., 2008; Pavlacky Jr. et al., 2012). We considered both $p$ and $θ$ to be nuisance variables that were important for generating unbiased estimates of $ψ$. $θ$ can be considered an availability parameter or the probability a species was present and available for sampling at the points (Nichols et al., 2008; Pavlacky Jr. et al., 2012).
 
 ### Automated Analysis
 
-We updated our analytical methods and are used Bayesian hierarchical models specifically designed for analysis of IMBCR data. We performed all data and output manipulation in R (R Core Team, 2019) and model fitting in JAGS (Plummer 2003, 2017) using the R package jagsUI (Kellner 2018). The R code called the raw data from the IMBCR Structured Query Language (SQL) server database and reformatted the data into a form usable with the JAGS code. We allowed the input of all data collected in a manner consistent with the IMBCR design to increase the number of detections available for estimating global detection rates for population density and site occupancy. The R code provided an automated framework for combining strata-level estimates of population density and site occupancy at multiple spatial scales, as well as estimating the standard deviations and credible intervals for the combined estimates.
+We updated our analytical methods and are used Bayesian hierarchical models specifically designed for analysis of IMBCR data. We performed all data and output manipulation in R (R Core Team, 2022) and model fitting in JAGS (Plummer 2003, 2017) using the R package jagsUI (Kellner 2018). The R code called the raw data from the IMBCR Structured Query Language (SQL) server database and reformatted the data into a form usable with the JAGS code. We allowed the input of all data collected in a manner consistent with the IMBCR design to increase the number of detections available for estimating global detection rates for population density and site occupancy. The R code provided an automated framework for combining strata-level estimates of population density and site occupancy at multiple spatial scales, as well as estimating the standard deviations and credible intervals for the combined estimates.
 
-We fit initial models to all species with at least 30 detections for density estimation and 10 detections for occupancy estimation. For density estimation, we fit the full model after determining whether there were enough detections based on results from the detection-only model fits. In some cases for both density and occupancy estimation, it was necessary to use a less parsimonious detection structure or simplified model structure to facilitate model convergence. We currently maintain version control of the automated analysis code in the Bird Conservancy repository (Atlassian Stash, version 3.6.1 
-
+We fit initial models to all species with at least 30 detections for density estimation and 10 detections for occupancy estimation. For density estimation, we fit the full model after determining whether there were enough detections based on results from the detection-only model fits. In some cases for both density and occupancy estimation, it was necessary to use a less parsimonious detection structure or simplified model structure to facilitate model convergence. We currently maintain version control of the automated analysis code in the Bird Conservancy repository on www.github.com.

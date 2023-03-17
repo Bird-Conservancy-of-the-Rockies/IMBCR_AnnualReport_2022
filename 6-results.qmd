@@ -8,46 +8,26 @@ title: "Summary"
 
 ```{r, echo = FALSE, message = FALSE}
 library(tidyverse)
-library(lubridate)
+
 data <- read.csv("2022_annualreportdata.csv")
 
 year <- unique(data$Year)
-
-total.planned <- sum(data$PlannedGrids)
-total.completed <- sum(data$CompletedGrids)
-percent.completed <- round((total.completed/total.planned)*100)
-
-total.points <- sum(data$CompletedPoints)
-
-first <- min(data$FirstVisit)
-last <- max(data$LastVisit)
-
-  first <- as_date(first)
-  first <- paste(month(first, 
-                           label = TRUE, abbr = FALSE), 
-                           day(first), 
-                           sep = " ")
-  last <- as_date(last)
-  last <- paste(month(last, 
-                          label = TRUE, abbr = FALSE), 
-                          paste(day(last), 
-                year(last), sep = ", "),
-                          sep = " ")
-  
-  n.birds <- sum(data$nBirdSpecies)
 
 ``` 
 ::: {.callout-note icon=false}
 
 ## `r year` Field Work
 
-In `r year`, field observers completed `r total.completed` of `r total.planned` (`r percent.completed`%) planned surveys throughout all or portions of BCRs 9, 10, 11, 15, 16, 17, 18, 19, and 33 using the IMBCR design (Table 1, Figure 2). Reasons surveys were not completed are summarized in Table 2. Observers conducted `r total.points` point counts within the `r total.completed` surveyed sampling units between `r first` and `r last`. They detected `r n.birds` individual birds representing 340 species.
+In 2022, field observers completed 1,348 of 1,415 (95.2%) planned surveys throughout all or portions of BCRs 9, 10, 11, 15, 16, 17, 18, 19, 33, and 34 using the IMBCR design (
+@tbl-planned-completed, @fig-map-2022). Five surveys were completed above the funded sample effort in two strata. Reasons surveys were not completed are summarized in @tbl-reasons. 
+
+Observers conducted 15,137 point counts within the 1,348 surveyed sampling units between May 1 and July 25, 2022. They detected 176,954 individual birds representing 350 species.
 
 :::
 
 Please note that not every stratum or superstratum is summarized in this report. We include details of specific strata or superstrata for which our partners are most interested. However, results from all strata and all biologically meaningful superstrata can be found on the [Rocky Mountain Avian Data Center](http://rmbo.org/v3/avian/ExploretheData.aspx) (RMADC). This online database contains species counts, density, abundance, and occupancy results per strata, and also interactive maps showing approximate survey and detection locations. Instructions for using the RMADC are included in Appendix A of this report and are available on the RMADC website (hover over the “Explore the Data” tab for tutorials). Each stratum or superstratum presented in the Results section contains a web link that leads directly to the RMADC with the appropriate queries already populated.  
 
-Unless otherwise specified, all bird species names listed in this report are from the 58th supplement to the American Ornithologists’ Union Check-list of North and Middle American Birds (Chesser et al., 2017).
+Unless otherwise specified, all bird species names listed in this report are from the 63rd supplement to the American Ornithological Society's Check-list of North American Birds (Chesser et al., 2022).
 
 
 ## Trend Estimates {.unnumbered}
@@ -89,19 +69,21 @@ This change means that the number of species with density or occupancy estimates
 
 ```{r, echo = F, message = F}
 #| column: page
+#| label: tbl-planned-completed
+#| tbl-cap: Planned and completed surveys by stratum, 2022.
 
 library(DT)
 
-plan.comp.strata <- read.csv("planned-completed-strata-2021.csv")
+plan.comp.strata <- read.csv("planned-completed-strata-2022.csv")
 
 datatable(plan.comp.strata, 
           extensions = 'Buttons',
-          options = list(pageLength = 5,
+          options = list(pageLength = 10,
                          autoWidth = FALSE,
                          dom = 'lftp',
                          buttons = c('copy', 'csv', 'excel', 'pdf', 'print')),
           rownames = FALSE,
-          caption = "Table 1. Planned and completed surveys by stratum, 2022.",
+        #  caption = "Table 1. Planned and completed surveys by stratum, 2022.",
           colnames = c("State", "BCR", "Stratum", "Stratum Description", 
                        "Who Collected", "Area (km2)", "Planned", "Completed",
                        "% Completed")) %>%

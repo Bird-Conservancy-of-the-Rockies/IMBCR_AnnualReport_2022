@@ -2,6 +2,8 @@
 format: html
 ---
 # Bird Conservation Regions
+
+![Survey locations and strata in the Badlands and Prairies Bird Conservation Region (BCR 17), 2022](BCR17_Report_2022_NoLogo.png){#fig-bcr-17}
 ```{r echo = FALSE, message = FALSE}
 
 library(tidyverse)
