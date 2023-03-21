@@ -4,7 +4,7 @@ format:
     number-sections: FALSE
 ---
 
-# Special Feature - Population Trends
+# Special Feature - Population Trends {#sec-trends}
 
 ```{r, echo = FALSE, message = FALSE}
 library(tidyverse)
@@ -18,6 +18,8 @@ trend$mean_trend <- round(trend$mean_trend, 2)
 ## Using IMBCR Trend Estimates to Track Species of Concern
 
 Long-term, rigorous monitoring provides valuable information on population status, allowing managers and biologists to focus limited resources on species of greatest concern. Monitoring populations at local and regional scales also facilitates a mechanistic understanding of how local and regional processes may interact and affect populations (Hewett et al. 2007, Pavlacky et al. 2017). Here we provide a few examples demonstrating the use of IMBCR population trends for tracking the status of designated species of concern and determining where specific populations may require management or conservation efforts.
+
+Trend estimates can be found in [this Google Drive folder](https://drive.google.com/drive/folders/1-ges-7CkLaHHk-BCtNV-SEvIyoqIHhxm?usp=share_link). Please see the associated Read Me document for an explanation of columns in the trend estimates spreadsheet. If you cannot access Google Drive, please contact [Jennifer Timmer](mailto: jennifer.timmer@birdconservancy.org) for a copy of the data.
 
 ### Wyoming BLM
 

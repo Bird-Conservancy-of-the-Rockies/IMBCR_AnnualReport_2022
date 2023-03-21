@@ -2,14 +2,25 @@
 
 In 2022, the IMBCR program’s area of inference encompassed four entire states (Colorado, Montana, Utah, and Wyoming) and portions of 11 additional states (Arizona, California, Idaho, Kansas, Nebraska, Nevada, New Mexico, North Dakota, Oklahoma, Oregon, and South Dakota). We surveyed across US Forest Service (USFS) Regions 1, 2, and 4 and in portions of Region 3; all of the Badlands and Prairies Bird Conservation Region (BCR 17), and portions of nine other BCRs: Great Basin (9), Northern Rockies (10), Prairie Potholes (11), Sierra Nevada (15), Southern Rockies/Colorado Plateau (16), Shortgrass Prairie (18), Central Mixed Grass Prairie (19), Sonoran and Mojave Deserts (33), and Sierra Madre Occidental (34).
 
-Observers conducted 15,066 point counts within 1,340 sampling units between May 1 and July 25, 2022. They detected 194,859 individual birds representing 355 species. This report summarizes the results of the 2022 field season. 
+Observers conducted 15,137 point counts within the 1,348 surveyed sampling units between May 1 and July 25, 2022. They detected 176,954 individual birds representing 350 species. This report summarizes the results of the 2022 field season. 
 
 > To view interactive maps illustrating survey and detection locations, and tables displaying species counts and population estimates (i.e., density and occupancy), please visit the [Rocky Mountain Avian Data Center](http://rmbo.org/v3/avian/ExploretheData.aspx) (RMADC). 
+>
+> Each stratum or combination of strata presented in this report's Results section contains a link that leads directly to the RMADC with the appropriate queries already populated. Please note that not every stratum or conceivable combination of strata is summarized in this report. However, all individual strata and all biologically meaningful combinations of strata, or “superstrata”, can be found on the RMADC.
+>
 
-::: {.callout-note appearance="minimal"}
-Instructions for using the RMADC are included in Appendix A of this report and are available on the RMADC itself (hover over the “Explore the Data” tab for tutorials). Each stratum or combination of strata presented in this report's Results section contains a web link that leads directly to the RMADC with the appropriate queries already populated. Please note that not every stratum or conceivable combination of strata is summarized in this report. However, all individual strata and all biologically meaningful combinations of strata, or “superstrata”, can be found on the RMADC.
+:::{.column-margin}
+
+Instructions for using the RMADC are included in Appendix A of this report and are available on the RMADC itself (hover over the “Explore the Data” tab for tutorials). 
+
 :::
 
-Long-term, rigorous monitoring provides valuable information on population status, allowing managers and biologists to focus limited resources on species of greatest concern. In the Discussion, we provide a few examples demonstrating the use of IMBCR population trends for tracking the status of designated species of concern and determining where specific populations may require management or conservation efforts.
+::: {.callout-note appearance="minimal"}
+## Special Feature - Population Trends
+
+In @sec-trends we provide a few examples demonstrating the use of IMBCR population trends for tracking the status of designated species of concern and determining where specific populations may require management or conservation efforts. 
+:::
+
+
 
 
