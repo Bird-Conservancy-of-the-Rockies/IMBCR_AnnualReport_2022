@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Integrated Monitoring in Bird Conservation Regions - 19&nbsp; Special Feature - Population Trends</title>
+<title>Integrated Monitoring in Bird Conservation Regions - 20&nbsp; Special Feature - Population Trends</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -61,16 +61,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.26/datatables.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/dt-core-1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-1.12.1/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="site_libs/jszip-1.12.1/jszip.min.js"></script>
+<script src="site_libs/pdfmake-1.12.1/pdfmake.js"></script>
+<script src="site_libs/pdfmake-1.12.1/vfs_fonts.js"></script>
+<link href="site_libs/dt-ext-buttons-1.12.1/css/buttons.dataTables.min.css" rel="stylesheet">
+<script src="site_libs/dt-ext-buttons-1.12.1/js/dataTables.buttons.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.12.1/js/buttons.html5.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.12.1/js/buttons.colVis.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.12.1/js/buttons.print.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+
 
 </head>
 
 <body class="nav-sidebar floating">
 
+
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Special Feature - Population Trends</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Special Feature - Population Trends</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -113,12 +132,17 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./4-intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./tables-figures.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Tables and Figures</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./5-methods.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Methods</span></a>
+  <a href="./4-intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5-methods.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Methods</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -131,62 +155,62 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./6-results.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./6-results.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./7-usfs.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">U.S. Forest Service</span></a>
+  <a href="./7-usfs.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">U.S. Forest Service</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./8-blm.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Bureau of Land Management</span></a>
+  <a href="./8-blm.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Bureau of Land Management</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./9-dod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Department of Defense</span></a>
+  <a href="./9-dod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Department of Defense</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-nps.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">National Park Service</span></a>
+  <a href="./10-nps.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">National Park Service</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./11-tribal.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Tribal Lands</span></a>
+  <a href="./11-tribal.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Tribal Lands</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./12-all-other.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">All Other Lands</span></a>
+  <a href="./12-all-other.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">All Other Lands</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./13-bcr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Bird Conservation Regions</span></a>
+  <a href="./13-bcr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Bird Conservation Regions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./14-co.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Colorado</span></a>
+  <a href="./14-co.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Colorado</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./15-mt.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Montana</span></a>
+  <a href="./15-mt.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Montana</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./16-ut.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Utah</span></a>
+  <a href="./16-ut.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Utah</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./17-wy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Wyoming</span></a>
+  <a href="./17-wy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Wyoming</span></a>
   </div>
 </li>
       </ul>
@@ -201,17 +225,17 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./18-applications.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Data Applications</span></a>
+  <a href="./18-applications.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Data Applications</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./19-trends.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Special Feature - Population Trends</span></a>
+  <a href="./19-trends.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Special Feature - Population Trends</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./20-conclusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Conclusions</span></a>
+  <a href="./20-conclusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Conclusions</span></a>
   </div>
 </li>
       </ul>
@@ -265,19 +289,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#using-imbcr-trend-estimates-to-track-species-of-concern" id="toc-using-imbcr-trend-estimates-to-track-species-of-concern" class="nav-link active" data-scroll-target="#using-imbcr-trend-estimates-to-track-species-of-concern"><span class="toc-section-number">19.1</span>  Using IMBCR Trend Estimates to Track Species of Concern</a></li>
-  <li><a href="#wyoming-blm" id="toc-wyoming-blm" class="nav-link" data-scroll-target="#wyoming-blm"><span class="toc-section-number">19.2</span>  Wyoming BLM</a></li>
-  <li><a href="#bird-conservation-region-17" id="toc-bird-conservation-region-17" class="nav-link" data-scroll-target="#bird-conservation-region-17"><span class="toc-section-number">19.3</span>  Bird Conservation Region 17</a></li>
-  <li><a href="#usfs-rocky-mountain-region" id="toc-usfs-rocky-mountain-region" class="nav-link" data-scroll-target="#usfs-rocky-mountain-region"><span class="toc-section-number">19.4</span>  USFS Rocky Mountain Region</a></li>
+  <li><a href="#using-imbcr-trend-estimates-to-track-species-of-concern" id="toc-using-imbcr-trend-estimates-to-track-species-of-concern" class="nav-link active" data-scroll-target="#using-imbcr-trend-estimates-to-track-species-of-concern">Using IMBCR Trend Estimates to Track Species of Concern</a>
+  <ul class="collapse">
+  <li><a href="#wyoming-blm" id="toc-wyoming-blm" class="nav-link" data-scroll-target="#wyoming-blm">Wyoming BLM</a></li>
+  <li><a href="#bird-conservation-region-17" id="toc-bird-conservation-region-17" class="nav-link" data-scroll-target="#bird-conservation-region-17">Bird Conservation Region 17</a></li>
+  <li><a href="#usfs-rocky-mountain-region" id="toc-usfs-rocky-mountain-region" class="nav-link" data-scroll-target="#usfs-rocky-mountain-region">USFS Rocky Mountain Region</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Special Feature - Population Trends</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Special Feature - Population Trends</span></h1>
 </div>
 
 
@@ -292,30 +318,84 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="using-imbcr-trend-estimates-to-track-species-of-concern" class="level2" data-number="19.1">
-<h2 data-number="19.1" class="anchored" data-anchor-id="using-imbcr-trend-estimates-to-track-species-of-concern"><span class="header-section-number">19.1</span> Using IMBCR Trend Estimates to Track Species of Concern</h2>
+<div class="cell">
+
+</div>
+<section id="using-imbcr-trend-estimates-to-track-species-of-concern" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="using-imbcr-trend-estimates-to-track-species-of-concern">Using IMBCR Trend Estimates to Track Species of Concern</h2>
 <p>Long-term, rigorous monitoring provides valuable information on population status, allowing managers and biologists to focus limited resources on species of greatest concern. Monitoring populations at local and regional scales also facilitates a mechanistic understanding of how local and regional processes may interact and affect populations (Hewett et al.&nbsp;2007, Pavlacky et al.&nbsp;2017). Here we provide a few examples demonstrating the use of IMBCR population trends for tracking the status of designated species of concern and determining where specific populations may require management or conservation efforts.</p>
-</section>
-<section id="wyoming-blm" class="level2" data-number="19.2">
-<h2 data-number="19.2" class="anchored" data-anchor-id="wyoming-blm"><span class="header-section-number">19.2</span> Wyoming BLM</h2>
+<section id="wyoming-blm" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="wyoming-blm">Wyoming BLM</h3>
 <p>We have been monitoring birds across the state of Wyoming since 2009, including all BLM land. Currently, Brewer’s sparrow, sage thrasher, and sagebrush sparrow are listed sensitive species for the Wyoming BLM. Due to the loss and degradation of sagebrush rangelands over the last century, many avian species associated with this biome have also declined and are now of conservation concern (Knick and Rotenberry 2002).</p>
-<p>Throughout all BLM land in Wyoming, populations for these three species are stable-to-increasing across the monitoring period (2009-2022; Fig. #), illustrating the overall value of these publicly managed lands for sagebrush birds (Table 3).</p>
-<p>Within several specific BLM field offices, however, populations for these three species are decreasing and may require specific management or conservation efforts to restore sagebrush rangelands. For example, the Brewer’s sparrow population is decreasing approximately 6% each year in the Lander Field Office, the sagebrush sparrow sparrow population is decreasing 19% per year in the Lander Field Office, and the sage thrasher population in the Worland Field Office is decreasing 5% each year (Table 3).</p>
+<p>Throughout all BLM land in Wyoming, populations for these three species are stable-to-increasing across the monitoring period (2009-2022; <a href="#fig-blm-wy-sage">Figure&nbsp;<span>20.1</span></a>), illustrating the overall value of these publicly managed lands for sagebrush birds (<a href="#sec-table-3">Table&nbsp;<span>3</span></a>).</p>
+<p><br></p>
+<div id="fig-blm-wy-sage" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="BLM-WY-density-trend.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;20.1: Density of three sagebrush-associated species across all BLM land in Wyoming from 2009-2022, illustrating stable to increasing population change.</figcaption><p></p>
+</figure>
+</div>
+<p><br></p>
+<p>Within several specific BLM field offices, however, populations for these three species are decreasing and may require specific management or conservation efforts to restore sagebrush rangelands. For example, the Brewer’s sparrow population is decreasing approximately 6% each year in the Lander Field Office, the sagebrush sparrow sparrow population is decreasing 19% per year in the Lander Field Office, and the sage thrasher population in the Worland Field Office is decreasing 5% each year (<a href="#sec-table-3">Table&nbsp;<span>3</span></a>).</p>
+<p><br> <br></p>
+<section id="sec-table-3" class="level5 column-screen-inset-right">
+<h5 class="anchored" data-anchor-id="sec-table-3"><em>Table 3. Population trend estimates for sensitive sagebrush bird species within select Wyoming Bureau of Land Management strata from the IMBCR program.</em></h5>
 </section>
-<section id="bird-conservation-region-17" class="level2" data-number="19.3">
-<h2 data-number="19.3" class="anchored" data-anchor-id="bird-conservation-region-17"><span class="header-section-number">19.3</span> Bird Conservation Region 17</h2>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-screen-inset-right">
+
+<div id="htmlwidget-0b984780a06d22063e19" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0b984780a06d22063e19">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["BLM land in WY      ","BLM land in WY      ","BLM land in WY      ","Lander Field Office ","Lander Field Office ","Worland Field Office"],["Brewer's Sparrow ","Sagebrush Sparrow","Sage Thrasher    ","Brewer's Sparrow ","Sagebrush Sparrow","Sage Thrasher    "],["<span style=\"color: forestgreen\">3<\/span>","<span style=\"color: forestgreen\">3<\/span>","<span style=\"color: forestgreen\">2<\/span>","<span style=\"color: orangered\">-6<\/span> ","<span style=\"color: orangered\">-19<\/span>","<span style=\"color: orangered\">-5<\/span> "],["1.03","1.03","1.02","0.94","0.81","0.95"],["0.71","1.07","0.67","1.62","3.24","3.25"],["1.02","1.02","1.01","0.92","0.77","0.90"],["1.04","1.05","1.03","0.96","0.86","1.01"],["1.00","1.00","1.00","1.00","1.00","0.94"],["11,455","5,757 ","5,680 ","664   ","295   ","136   "],["2009-2022","2009-2022","2009-2022","2009-2022","2009-2022","2009-2022"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Stratum<\/th>\n      <th>Species<\/th>\n      <th>Percent change per year<\/th>\n      <th>Trend estimate<\/th>\n      <th>Coefficient of Variation<\/th>\n      <th>Lower 90%<\/th>\n      <th>Upper 90%<\/th>\n      <th>f<\/th>\n      <th>Number of Detections<\/th>\n      <th>Monitoring period<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"dom":"tip","buttons":["copy","csv","excel","pdf","print"],"columnDefs":[{"className":"dt-left","targets":[0,1]},{"className":"dt-center","targets":[2,3,4,5,6,7,8,9]}],"order":[[1,"desc"]],"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'12px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'12px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'12px'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'12px'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'font-size':'12px'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'font-size':'12px'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'font-size':'12px'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'font-size':'12px'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'font-size':'12px'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<p><br> <br></p>
+</section>
+<section id="bird-conservation-region-17" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="bird-conservation-region-17">Bird Conservation Region 17</h3>
 <p>We have also monitored across the Badlands and Prairies Bird Conservation Region (BCR 17) since 2009. Grassland birds are among the fastest declining group of birds in North America (Rosenberg et al.&nbsp;2019, NABCI 2022). Grassland prairie converted for cropland or residential development threatens these populations on both the breeding and wintering grounds (NABCI 2016), and the loss may be as high as 700 million breeding individuals over the past 50 years (Rosenberg et al.&nbsp;2019).</p>
-<p>For the Northern Great Plains Joint Venture, the chestnut-collared longspur and Sprague’s pipit are focal species of conservation concern, and are declining across this region (17% each year for chestnut-collared longspur and 26% each year for Sprague’s pipit; Table 3). However, if we look at specific management units in BCR17, local populations for these species are actually increasing: chestnut-collared longspur by 4% each year on Cedar River National Grassland in North Dakota and Sprague’s pipit by 17% each year on Grand River National Grassland in South Dakota (Table 3).</p>
+<p>For the Northern Great Plains Joint Venture, the chestnut-collared longspur and Sprague’s pipit are focal species of conservation concern, and are declining across this region (17% each year for chestnut-collared longspur and 26% each year for Sprague’s pipit; <a href="#sec-table-4">Table&nbsp;<span>4</span></a>). However, if we look at specific management units in BCR17, local populations for these species are actually increasing: chestnut-collared longspur by 4% each year on Cedar River National Grassland in North Dakota and Sprague’s pipit by 17% each year on Grand River National Grassland in South Dakota (<a href="#sec-table-4">Table&nbsp;<span>4</span></a>).</p>
+<p><br> <br></p>
+<section id="table-4.-population-trend-estimates-for-two-grassland-bird-species-within-bird-conservation-region-17-from-the-imbcr-program.-sec-table-4" class="level5 column-screen-inset-right">
+<h5 class="anchored" data-anchor-id="table-4.-population-trend-estimates-for-two-grassland-bird-species-within-bird-conservation-region-17-from-the-imbcr-program.-sec-table-4"><em>Table 4. Population trend estimates for two grassland bird species within Bird Conservation Region 17 from the IMBCR program. {#sec-table-4}</em></h5>
+</section>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-screen-inset-right">
+
+<div id="htmlwidget-0a89c59bdffb90ca7dbe" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0a89c59bdffb90ca7dbe">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["BCR17","BCR17"],["Chestnut-collared Longspur","Sprague's Pipit           "],["<span style=\"color: orangered\">-17<\/span>","<span style=\"color: orangered\">-26<\/span>"],["0.83","0.74"],["2.57","16.83"],["0.79","0.56"],["0.86","0.95"],["1.00","0.98"],["4,602","160  "],["2009-2022","2009-2022"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Stratum<\/th>\n      <th>Species<\/th>\n      <th>Percent change per year<\/th>\n      <th>Trend estimate<\/th>\n      <th>Coefficient of Variation<\/th>\n      <th>Lower 90%<\/th>\n      <th>Upper 90%<\/th>\n      <th>f<\/th>\n      <th>Number of Detections<\/th>\n      <th>Monitoring period<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":false,"dom":"tip","buttons":["copy","csv","excel","pdf","print"],"columnDefs":[{"className":"dt-left","targets":[0,1]},{"className":"dt-center","targets":[2,3,4,5,6,7,8,9]}],"order":[[1,"desc"]],"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'12px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'12px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'12px'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'12px'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'font-size':'12px'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'font-size':'12px'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'font-size':'12px'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'font-size':'12px'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'font-size':'12px'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<p><br> <br></p>
 <p>Grassland birds often show low site fidelity from year-to-year as they track suitable breeding sites (Cody 1985), emphasizing the need for regional monitoring to identify these important breeding locations and to track population change over time. In addition, the monitoring data serve as a logical place to form hypotheses for observed population fluctuations and predictions about bird response to drivers of change (Pavlacky et al.&nbsp;2017). For example, we could model abiotic and biotic habitat features relevant for grassland birds to understand population discrepancies between regional and local scales.</p>
 </section>
-<section id="usfs-rocky-mountain-region" class="level2" data-number="19.4">
-<h2 data-number="19.4" class="anchored" data-anchor-id="usfs-rocky-mountain-region"><span class="header-section-number">19.4</span> USFS Rocky Mountain Region</h2>
+<section id="usfs-rocky-mountain-region" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="usfs-rocky-mountain-region">USFS Rocky Mountain Region</h3>
 <p>The USFS Rocky Mountain Region has been involved in IMBCR since the beginning in 2008, so we now have 15 years of monitoring data across this region. Cassin’s sparrow and olive-sided flycatcher are designated sensitive species for the Rocky Mountain Region because of concern about the population viability of these species on USFS land within the region (USFS Manual 2670.5).</p>
-<p>Cassin’s sparrows are actually increasing across national grasslands in this region (5% each year; Fig. #), and olive-sided flycatchers are also increasing about 4% each year across national forests in the region (table #). It’s important to look at trends within specific units, however, because populations may show variable trends locally and could warrant a designation as Species of Conservation Concern (36 CFR § 219.19).</p>
-<p>For instance, olive-sided flycatchers are decreasing 19% each year on the Arapaho and Roosevelt National Forests, but increasing 35% per year on the Shoshone National Forest (Table 3). Populations of western forest species may be stable overall, but forests with a greater departure from historical conditions shaped by frequent fire activity could be hotspots for avian population declines (NABCI 2022).</p>
-<p>Cassin’s sparrows are decreasing 17% each year on Pawnee National Grassland, but increasing 3% each year on Comanche National Grassland (Table 3; Fig. #). Although many grassland birds breed on privately owned land, publicly managed grasslands also provide critical breeding habitat.</p>
+<p>Cassin’s sparrows are actually increasing across national grasslands in this region (5% each year; <a href="#fig-usfs-grassland">Figure&nbsp;<span>20.2</span></a>), and olive-sided flycatchers are also increasing about 4% each year across national forests in the region (<a href="#sec-table-5">Table&nbsp;<span>5</span></a>). It’s important to look at trends within specific units, however, because populations may show variable trends locally and could warrant a designation as Species of Conservation Concern (36 CFR § 219.19).</p>
+<p><br> <br></p>
+<section id="table-5.-population-trend-estimates-for-sensitive-species-within-select-u.s.-forest-service-national-grassland-and-national-forest-strata-from-the-imbcr-program.-sec-table-5" class="level5 column-screen-inset-right">
+<h5 class="anchored" data-anchor-id="table-5.-population-trend-estimates-for-sensitive-species-within-select-u.s.-forest-service-national-grassland-and-national-forest-strata-from-the-imbcr-program.-sec-table-5"><em>Table 5. Population trend estimates for sensitive species within select U.S. Forest Service National Grassland and National Forest strata from the IMBCR program. {#sec-table-5}</em></h5>
+</section>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-screen-inset-right">
+
+<div id="htmlwidget-7be6fc8d4cb95ddd1528" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7be6fc8d4cb95ddd1528">{"x":{"filter":"none","vertical":false,"data":[["Cedar River National Grassland      ","Grand River National Grassland      ","USFS Region 2 National Grasslands   ","USFS Region 2 National Forests      ","Comanche National Grassland         ","Cimarron National Grassland         ","Arapaho & Roosevelt National Forests","Shoshone National Forest            "],["Chestnut-collared Longspur","Sprague's Pipit           ","Cassin's Sparrow          ","Olive-sided Flycatcher    ","Cassin's Sparrow          ","Cassin's Sparrow          ","Olive-sided Flycatcher    ","Olive-sided Flycatcher    "],["<span style=\"color: forestgreen\">4<\/span> ","<span style=\"color: forestgreen\">17<\/span>","<span style=\"color: forestgreen\">5<\/span> ","<span style=\"color: forestgreen\">4<\/span> ","<span style=\"color: forestgreen\">3<\/span> ","<span style=\"color: orangered\">-11<\/span> ","<span style=\"color: orangered\">-19<\/span> ","<span style=\"color: forestgreen\">35<\/span>"],["1.04","1.17","1.05","1.04","1.03","0.09","0.81","1.35"],["1.20","10.71","1.36","1.29","0.53","2.07","11.23","4.61"],["1.02","0.98","1.03","1.02","1.02","0.86","0.67","1.24"],["1.06","1.40","1.07","1.06","1.04","0.92","0.95","1.43"],["1.00","0.94","1.00","1.00","1.00","1.00","0.98","1.00"],["885  ","35   ","3,667","845  ","2,755","738  ","57   ","97   "],["2013-2022","2013-2022","2009-2022","2011-2022","2008-2022","2016-2022","2008-2022","2009-2022"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Stratum<\/th>\n      <th>Species<\/th>\n      <th>Percent change per year<\/th>\n      <th>Trend estimate<\/th>\n      <th>Coefficient of Variation<\/th>\n      <th>Lower 90%<\/th>\n      <th>Upper 90%<\/th>\n      <th>f<\/th>\n      <th>Number of Detections<\/th>\n      <th>Monitoring period<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":false,"dom":"tip","columnDefs":[{"className":"dt-left","targets":[0,1]},{"className":"dt-center","targets":[2,3,4,5,6,7,8,9]}],"order":[[1,"desc"]],"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'12px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'12px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'12px'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'12px'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'font-size':'12px'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'font-size':'12px'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'font-size':'12px'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'font-size':'12px'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'font-size':'12px'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<p><br> <br></p>
+<p>For instance, olive-sided flycatchers are decreasing 19% each year on the Arapaho and Roosevelt National Forests, but increasing 35% per year on the Shoshone National Forest (<a href="#sec-table-5">Table&nbsp;<span>5</span></a>). Populations of western forest species may be stable overall, but forests with a greater departure from historical conditions shaped by frequent fire activity could be hotspots for avian population declines (NABCI 2022).</p>
+<p>Cassin’s sparrows are decreasing 11% each year on Cimarron National Grassland, but increasing 3% each year on Comanche National Grassland (<a href="#sec-table-5">Table&nbsp;<span>5</span></a>; <a href="#fig-usfs-grassland">Figure&nbsp;<span>20.2</span></a>). Although many grassland birds breed on privately owned land, publicly managed grasslands also provide critical breeding habitat.</p>
+<p><br></p>
+<div id="fig-usfs-grassland" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="USFS-grassland-density-trend.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;20.2: Density of Cassin’s sparrows on Comanche National Grassland, Cimarron National Grassland, and all national grasslands in USFS Region 2 from 2008-2022 (2016-2022 for Cimarron only), illustrating variable population trends at local and regional scales.</figcaption><p></p>
+</figure>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -455,12 +535,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./18-applications.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Data Applications</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Data Applications</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./20-conclusion.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Conclusions</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Conclusions</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

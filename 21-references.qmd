@@ -4,4 +4,160 @@
 :::
 
 
-Chesser, R. T., S. M. Billerman, K. J. Burns, C. Cicero, J. L. Dunn, B. E. Hernández-Baños, R. A. Jiménez, A. W. Kratter, N. A. Mason, P. C. Rasmussen, J. V. Remsen, Jr., D. F. Stotz, and K. Winker. 2022. Check-list of North American Birds (online). American Ornithological Society. [https://checklist.americanornithology.org/taxa/](https://checklist.americanornithology.org/taxa/)
+
+
+Alexander, J. D., Stephens, J. L., Geupel, G. R., & Will, T. C. (2008). Decision support tools: bridging the gap between science and management. In Proceedings of the Fourth International Partners in Flight Conference: Tundra to Tropics. (p. Pages 283–291). McAllen, Texas, USA. Retrieved from http://www.partnersinflight.org/pubs/McAllenProc/articles/PIF09_Decision Support Tools/Alexander_PIF09.pdf  
+
+Arizona Game and Fish Department. (2012). Arizona’s State Wildlife Action Plan: 2012 - 2022. Arizona Game and Fish Department, Phoenix, Arizona. Retrieved from http://www.azgfd.gov/pdfs/w_c/cwcs/downloads/CWCS_Final_May2006.pdf  
+
+Baron, J. S., Julius, S. H., West, J. M., Joyce, L. A., Blate, G., Peterson, C. H., … Griffith, B. (2008). Some guidelines for helping natural resources adapt to climate change. International Human Dimensions Programme on Global Environmental Change Update, 2, 46–52.  
+
+Blakesley, J. A., & Hanni, D. J. (2009). Monitoring Colorado’s Birds, 2008 (No. Tech. Rep. M-MCB08-01.). Technical Report M-MCB08-01. Rocky Mountain Bird Observatory, Brighton, Colorado, USA.  
+
+Brooks, T., Da Fonseca, G. A. and Rodrigues, A. S. (2004). Species, Data, and Conservation Planning. Conservation Biology, 18, 1682-1688.  
+
+Buckland, S. T., Anderson, D. R., Burnham, K. P., Laake, J. L., Borchers, D. L., & Thomas, L. (2001). Introduction to distance sampling: estimating abundance of biological populations. Oxford, UK: Oxford University Press.  
+
+Buckland, S. T., Marsden, S. J., & Green, R. E. (2008). Estimating bird abundance: making methods work. Bird Conservation International, 18, S91–S108.  
+
+Bureau of Land Management. (2010). Wyoming Sensitive Species Policy and List. Retrieved from http://www.blm.gov/pgdata/etc/medialib/blm/wy/resources/efoia/IMs/2010.Par.41285.File.dat/wy2010-027atch2.pdf  
+
+Bureau of Land Management. (2014). 2014 Montana/Dakotas BLM Special Status Species List.  
+
+Bureau of Land Management. (2015). Idaho Bureau of Land Management Special Status Species List Update. Idaho State Office Instruction Memorandum 2015-009c1, attachment 1.
+Chesser, R. T., Burns, K. J., Cicero, C., Dunn, J. L., Kratter, A. W., Lovette, I. J., … Winker, K. (2017). Fifty-eighth supplement to the American Ornithological Society’s Check-list of North American Birds. The Auk, 134(3), 751–773.  
+
+Chesser, R. T., S. M. Billerman, K. J. Burns, C. Cicero, J. L. Dunn, B. E. Hernández-Baños, R. A. Jiménez, A. W. Kratter, N. A. Mason, P. C. Rasmussen, J. V. Remsen, Jr., D. F. Stotz, and K. Winker. 2022. Check-list of North American Birds (online). American Ornithological Society. [https://checklist.americanornithology.org/taxa/](https://checklist.americanornithology.org/taxa/)  
+
+Cody, M. L. (1985). Habitat selection in birds. New York, NY, USA. Academic Press.  
+
+Colorado Parks and Wildlife. (2015). Vertebrate and Mollusk Species of Greatest Conservation Need. Retrieved from http://cpw.state.co.us/Documents/WildlifeSpecies/SWAP/SGCN-Final-Table.pdf  
+
+Correll, M. D., Drilling, N., Dwyer, A., George, T. L., Green, A. W., Panjabi, A. O., Pavlacky Jr., D. C., Quattrini, L., Shaw, A., Sparks, R. A., Strasser, E. H., & Van Boer, A. (2016). Recommendations for grassland bird species conservation in the Northern Great Plains business plan. Final report. Bird Conservancy of the Rockies, Brighton, Colorado, USA.  
+
+Dreitz, V. J., Lukacs, P. M., & Knopf, F. L. (2006). Monitoring low density avian populations: An example using Mountain Plovers. Condor, 108(3), 700–706.  
+
+Dreitz, V. J., Stinson, L. T., Hahn, B. A., Tack, J. D., & Lukacs, P. M. (2017). A large-scale perspective for managing prairie avifauna assemblages across the western US: influences of habitat, land ownership and latitude. PeerJ, 5, e2879. https://doi.org/10.7717/peerj.2879  
+
+Dyke, S. R., Johnson, S. K., Isakson, P. T. (2015). North Dakota State Wildlife Action Plan. North Dakota Game and Fish Department, Bismarck, ND. 438 pp.
+Environmental Systems Research Institute. (2017). ArcGIS, version 10.X. Redlands, California, USA: Environmental Systems Research Institute, Incorporated.  
+
+Green, A. W., Pavlacky, D. C., & George, T. L. (2019). A dynamic multi-scale occupancy model to estimate temporal dynamics and hierarchical habitat use for nomadic species. Ecology and Evolution, 2019(9), 793-803.  
+
+Hanni, D. J., White, C. M., Birek, J. J., Van Lanen, N. J., & McLaren, M. F. (2012). Field protocol for spatially-balanced sampling of landbird populations. Unpublished report. Brighton, Colorado, USA: Rocky Mountain Bird Observatory. Retrieved from http://rmbo.org/v3/Portals/5/Protocols/2012%20Field_protocol_for_spacially_balanced_sampling_final.pdf  
+
+Hewitt JE, Thrush SF, Dayton PK, Bonsdorff E. 2007. The effect of spatial and temporal heterogeneity on the design and analysis of empirical studies of scale-dependent systems. American Naturalist 169:398–408.  
+
+Hobbs, N. T., & Hooten, M. B. (2015). Bayesian models: a statistical primer for ecologists. Princeton University Press, Princeton, New Jersey, USA.  
+
+Johnson, D. H. (1980). The Comparison of Usage and Availability Measurements for Evaluating Resource Preference. Ecology, 61(1), 65–71. https://doi.org/10.2307/1937156  
+
+Jones, J. P. G. (2011). Monitoring species abundance and distribution at the landscape scale. Journal of Applied Ecology, 48(1), 9–13. https://doi.org/10.1111/j.1365-2664.2010.01917.x  
+
+Kellner, K. (2018). Package 'jagsUI'. https://cran.r-project.org/web/packages/jagsUI/jagsUI.pdf. Accessed 2 Jul 2019.   
+
+Knick, S.T., and Rotenberry, J.T., 2002. Effects of habitat fragmentation on passerine birds 587 breeding in Intermountain shrubsteppe. Studies in Avian Biology 25:131–141.  
+
+Lindenmayer, D. B., & Likens, G. E. (2009). Adaptive monitoring: a new paradigm for long-term research and monitoring. Trends in Ecology and Evolution, 24(9), 482–486.  
+
+Lindenmayer, D. B., & Likens, G. E. (2010). The science and application of ecological monitoring. Biological Conservation, 143(6), 1317–1328. https://doi.org/10.1016/j.biocon.2010.02.013  
+
+Lyons, J. E., Runge, M. C., Laskowski, H. P., & Kendall, W. L. (2008). Monitoring in the context of structured decision-making and adaptive management. The Journal of Wildlife Management, 72 (8), 1683–1692.  
+
+MacKenzie, D. I., Nichols, J. D., Lachman, G. B., Droege, S., Royle, J. A., & Langtimm, C. A. (2002). Estimating site occupancy rates when detection probabilities are less than one. Ecology, 83(8), 2248–2255.  
+
+MacKenzie, D. I., Nichols, J. D., Royle, J. A., Pollock, K. H., Bailey, L. L., & Hines, J. E. (2006). Occupancy estimation and modeling: inferring patterns and dynamics of species occurrence. Burlington, Massachusetts, USA: Elsevier.  
+
+Manley, P. N., Schlesinger, M. D., Roth, J. K., & Van Horne, B. (2005). A field-based evaluation of a presence-absence protocol for monitoring ecoregional-scale biodiversity. Journal of Wildlife Management, 69(3), 950–966.  
+
+Marsh, D. M., & Trenham, P. C. (2008). Current trends in plant and animal population monitoring. Conservation Biology, 22(3), 647–655.  
+
+Metzger, M. J., Brus, D. J., Bunce, R. G. H., Carey, P. D., Gonçalves, J., Honrado, J. P., … Zomer, R. (2013). Environmental stratifications as the basis for national, European and global ecological monitoring. Ecological Indicators, 33, 26–35. https://doi.org/10.1016/j.ecolind.2012.11.009  
+
+Montana Fish Wildlife and Parks. (2015). Montana State Wildlife Action Plan, 1–453. https://doi.org/10.1017/CBO9781107415324.004  
+
+Montana Natural Heritage Program. (2015). Animal Species of Concern. Retrieved April 1, 2015, from http://mtnhp.org/SpeciesOfConcern/  
+
+Mordecai, R. S., Mattsson, B. J., Tzilkowski, C. J., & Cooper, R. J. (2011). Addressing challenges when studying mobile or episodic species: Hierarchical Bayes estimation of occupancy and use. Journal of Applied Ecology 48: 56–66. https://doi.org/10.1111/j.1365-2664.2010.01921.  
+
+New Mexico Department of Game and Fish. (2016). State Wildlife Action Plan for New Mexico. New Mexico Department of Game and Fish. Santa Fe, New Mexico. Retrieved from http://www.wildlife.state.nm.us/download/conservation/swap/New-Mexico-State-Wildlife-Action-Plan-SWAP-Final-2017.pdf  
+
+Nichols, J. D., Bailey, L. L., O’Connell, A. F., Talancy, N. W., Grant, E. H. C., Gilbert, A. T., … Hines, J. E. (2008). Multi-scale occupancy estimation and modelling using multiple detection methods. Journal of Applied Ecology, 45(5), 1321–1329.  
+
+Nichols, J. D., & Williams, B. K. (2006). Monitoring for conservation. Trends in Ecology and Evolution, 21(12), 668–673.  
+
+Noon, B. R., Bailey, L. L., Sisk, T. D., & McKelvey, K. S. (2012). Efficient Species-Level Monitoring at the Landscape Scale. Conservation Biology, 26(3), 432–441.  
+
+North American Bird Conservation Initiative. (2016). The State of North America’s Birds 2016. Environment and Climate Change Canada: Ottawa, Ontario. 8 pages. www.stateofthebirds.org  
+
+North American Bird Conservation Initiative. 2022. The State of the Birds, United States of America, 2022. StateoftheBirds.org  
+
+Oklahoma Department of Wildlife Conservation. (2015). Oklahoma Comprehensive Wildlife Conservation Strategy: A Strategic Conservation Plan for Oklahoma’s Rare and Declining Wildlife Retrieved from https://www.wildlifedepartment.com/wildlifemgmt/cwcs.pdf  
+
+Opdam, P., & Wascher, D. (2004). Climate change meets habitat fragmentation: linking landscape and biogeographical scale levels in research and conservation. Biological Conservation, 117(3), 285–297.  
+
+Partners in Flight. (2017). Avian Conservation Assessment Database, version 2017. Retrieved March 7, 2018, from http://pif.birdconservancy.org/ACAD  
+
+Pavlacky, D. C., Lukacs, P. M., Blakesley, J. A., Skorkowsky, R. C., Klute, D. S., Hahn, B. A., … Hanni, D. J. (2017). A statistically rigorous sampling design to integrate avian monitoring and management within Bird Conservation Regions. PLoS ONE, 12(10). https://doi.org/10.1371/journal.pone.0185924  
+
+Pavlacky Jr., D. C., Blakesley, J. A., White, G. C., Hanni, D. J., & Lukacs, P. M. (2012). Hierarchical multi-scale occupancy estimation for monitoring wildlife populations. Journal of Wildlife Management, 76, 154–162.  
+
+Plummer, M. (2003). JAGS: a program for analysis of Bayesian graphical models using Gibbs sampling. Proceedings of the 3rd International Workshop on Distributed Statistical Computing DSC 2003, 20–22 March 2003, Vienna, Austria.  
+
+Plummer, M. (2017). JAGS version 4.3.0 user manual. https://sourceforge.net/projects/mcmc-jags/files/Manuals/4.x/jags_user_manual.pdf/download. Accessed 2 Jul 2019.  
+
+Pollock, K. H. (1982). A capture-recapture design robust to unequal probability of capture. Journal of Wildlife Management, 46(3), 752–757.  
+
+Pollock, K. H., Nichols, J. D., Simons, T. R., Farnsworth, G. L., Bailey, L. L., & Sauer, J. R. (2002). Large scale wildlife monitoring studies: statistical methods for design and analysis. Environmetrics, 13(2), 105–119. https://doi.org/10.1002/env.514  
+
+R Core Team. (2019). R: a language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing. Retrieved from www.R-project.org/  
+
+Rich, T. D., Beardmore, C. J., Berlanga, H., Blancher, P. J., Bradstreet, M. S. W., Butcher, G. S., … Will, T. C. (2004). Partners in Flight North American landbird conservation plan. Ithaca, New York, USA: Cornell Lab of Ornithology.  
+
+Rosenstock, S. S., Anderson, D. R., Giesen, K. M., Leukering, T., & Carter, M. F. (2002). Landbird counting techniques: current practices and an alternative. Auk, 119(1), 46–53.  
+
+Royle, J. A., Dawson, D. K., & Bates, S. (2004). Modeling abundance effects in distance sampling. Ecology, 85(6), 1591-1597.  
+
+Ruggiero, L. F., Hayward, G. D., & Squires, J. R. (1994). Viability analysis in biological evaluations: Concepts of population vability analysis, biological population, and ecological scale. Conservation Biology, 8(2), 364–372.  
+
+Ruth, J. M., Petit, D. R., Sauer, J. R., Samuel, M. D., Johnson, F. A., Fornwall, M. D., Bennett, J. P. (2003). Science for avian conservation: Priorities for the new millennium. Auk, 120(1), 204–211.  
+
+Sauer, J. R., & Knutson, M. G. (2008). Objectives and metrics for wildlife monitoring. Journal of Wildlife Management, 72(8), 1663–1664.  
+
+Schneider, R., Fritz, M., Jorgensen, J., Schainost, S., Simpson, R., Steinauer, G., & Rothe-Groleau, C.. (2018). Revision of the Tier 1 and 2 Lists of Species of Greatest Conservation Need: A Supplement to the Nebraska Natural Legacy Project State Wildlife Action Plan. The Nebraska Game and Parks Commission, Lincoln, NE.  
+
+Sillett, T. S., Chandler, R. B., Royle, J. A., Kéry, M., & Morrison, S.A. (2012). HIerarchical distance-sampling models to estimate population size and habitat-specific abundance of an island endemic. Ecological Applications, 22(7), 1997-2006.  
+
+Sparks, R. A., & Hanni, D. J. (2013). Monitoring Birds on Little Missouri, Sheyenne and Grand River National Grasslands. Tech. Report # M-DAKPG-12. Rocky Mountain Bird Observatory, Brighton, Colorado, USA.  
+
+Sparks R. A., Van Lanen, N. J., Van Boer, A. & Pavlacky Jr., D. C. (2016). Monitoring Avian Populations on Colorado and Wyoming Military Installations. Bird Conservancy of the Rockies. Brighton, Colorado, USA.  
+
+Stevens Jr., D. L., & Olsen, A. R. (2004). Spatially balanced sampling of natural resources. Journal of the American Statistical Association, 99(465), 262–278.  
+
+Texas Parks and Wildlife Department. (2012). Texas Conservation Action Plan 2012 - 2016. Austin, TX.  
+
+Thomas, L., Buckland, S. T., Rexstad, E. A., Laake, J. L., Strindberg, S., Hedley, S. L., … Burnham, K. P. (2010). Distance software: design and analysis of distance sampling surveys for estimating population size. Journal of Applied Ecology, 47, 5–14.  
+
+Thompson, W. L. (2002). Towards reliable bird surveys: accounting for individuals present but not detected. Auk, 119(1), 18–25.  
+
+Thompson, W. L., White, G. C., & Gowan, C. (1998). Monitoring vertebrate populations. San Diego, California, USA: Academic Press.  
+
+US Forest Service. (2008). Region 2 Regional Forester’s Sensitive Species. Retrieved from http://www.fs.fed.us/r2/projects/scp/sensitivespecies/index.shtml.  
+
+US North American Bird Conservation Initiative. (2000). Bird Conservation Regions descriptions: a supplement to the North American Bird Conservation Initiative: Bird Conservation Regions map.  
+ 
+US North American Bird Conservation Initiative. (2009). The State of the Birds, United States of America, 2009. Washington, D.C., USA: U.S. Department of Interior. Retrieved from http://www.stateofthebirds.org/pdf_files/State of the Birds_FINAL.pdf  
+
+US North American Bird Conservation Initiative Monitoring Subcommittee. (2007). Opportunities for improving avian monitoring. Arlington, Virginia, USA: Division of Migratory Bird Management, U.S. Fish and Wildlife Service. Retrieved from http://www.nabci-us.org/aboutnabci/monitoringreportfinal0307.pdf  
+
+Utah Wildlife Action Plan Joint Team. (2015). Utah Wildlife Action Plan: A plan for managing native wildlife species and their habitats to help prevent listing under the Endangered Species Act. Salt Lake City, Utah, USA: Utah Division of Wildlife Resources.  
+
+Watanabe, S. (2010). Asymptotic equivalence of Bayes cross validation and widely applicable information criterion in singular learning theory. Journal of Machine Learning Research, 2010(11), 3571-3594.  
+
+Wiens, J. A., Rotenberry, J. T., & Van Horne, B. (1987). Habitat Occupancy Patterns of North American Shrubsteppe Birds: The Effects of Spatial Scale. Oikos, 48(2), 132.  https://doi.org/10.2307/3565849  
+
+Wilson, K. A., Underwood, E. C., Morrison, S. A., Klausmeyer, K. R., Murdoch, W. W., Reyers, B., … Possingham, H. P. (2007). Conserving biodiversity efficiently: What to do, where, and when. PLoS Biology, 5(9), 1850–1861. https://doi.org/10.1371/journal.pbio.0050223  
+
+Witmer, G. W. (2005). Wildlife population monitoring: some practical considerations. Wildlife Research, 32, 259–263.  
+
+Wyoming Game and Fish Department. (2016). 2017 Species of Greatest Conservation Need. Retrieved from https://wgfd.wyo.gov/WGFD/media/content/PDF/Habitat/SWAP/Wyoming-SGCN.pdf

@@ -1,0 +1,73 @@
+---
+title: "table-formatting-tests"
+format: html
+---
+
+
+
+```{r}
+library(tidyverse)
+trend <- read.csv("trend_special_feature.csv") 
+
+trend$mean_trend <- round(trend$mean_trend, 2)
+
+library(DT)
+library(formattable)
+
+
+blm_wy <- trend[1:6,]
+
+#
+# my_color_tile <- function(x){formatter(.tag = "span", style = (display = "block", padding = "0 4px", `border-radius` = "4px", `background-color` = x))}
+# 
+# formattable(blm_wy, list(
+#   percent_change_year = my_color_tile("green")))
+# 
+# color_tile()
+# 
+# formatter(.tag = "span", style = function(x) style(display = "block", 
+#     padding = "0 4px", `border-radius` = "4px", `background-color` = csscolor(gradient(as.numeric(x), 
+#         ...))))
+# 
+# formatter(.tag = "span", style = function(x) style(display = "block", 
+#     padding = "0 4px", `border-radius` = "4px", `background-color` = ifelse (percent_change_year > 0, "forestgreen", )))))
+
+
+
+sign_formatter <- formatter("span", 
+  style = percent_change_year ~ style(color = ifelse(percent_change_year > 0, "forestgreen", 
+    ifelse(percent_change_year < 0, "orangered", "black"))))
+
+
+
+
+
+as.datatable(formattable(blm_wy, list(
+  #percent_change_year = color_tile("lightgreen", "orangered")
+  percent_change_year = sign_formatter)),
+  extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         autoWidth = FALSE,
+                         dom = 'lftp', # sets the search bar, etc
+                         buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+                         columnDefs = list(list(className = 'dt-left', targets = 0:1), list(className = 'dt-center', targets = 2:9))),
+          rownames = FALSE,
+          colnames = c("Stratum", "Species", "Percent change per year", "Trend estimate", "Coefficient of Variation", "Lower 90%", "Upper 90%", "f", "Number of Detections", "Monitoring period")) 
+
+# %>% formatStyle(1:9, fontSize = '12px')
+
+
+# datatable(blm_wy, 
+#           extensions = 'Buttons',
+#           options = list(pageLength = 10,
+#                          autoWidth = FALSE,
+#                          dom = 'lftp', # sets the search bar, etc
+#                          buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+#                          columnDefs = list(list(className = 'dt-left', targets = 0:1), list(className = 'dt-center', targets = 2:9))),
+#           rownames = FALSE,
+#           colnames = c("Stratum", "Species", "Percent change per year", "Trend estimate", "Coefficient of Variation", "Lower 90%", "Upper 90%", "f", "Number of Detections", "Monitoring period")) %>%
+#   formatStyle(1:9, fontSize = '12px')
+
+
+```
+

@@ -1,6 +1,7 @@
 ---
-format:
+format: 
   html:
+    toc: true
     toc-depth: 5
 prefer-html: true
 title: "Summary"
@@ -14,16 +15,14 @@ data <- read.csv("2022_annualreportdata.csv")
 year <- unique(data$Year)
 
 ``` 
-::: {.callout-note icon=false}
 
-## `r year` Field Work
+
+## `r year` Field Work {.unnumbered}
 
 In 2022, field observers completed 1,348 of 1,415 (95.2%) planned surveys throughout all or portions of BCRs 9, 10, 11, 15, 16, 17, 18, 19, 33, and 34 using the IMBCR design (
-@tbl-planned-completed, @fig-map-2022). Five surveys were completed above the funded sample effort in two strata. Reasons surveys were not completed are summarized in @tbl-reasons. 
+<a href="#sec-planned-completed">Table&nbsp;<span>1</span></a>, @fig-extent). Five surveys were completed above the funded sample effort in two strata. Reasons surveys were not completed are summarized in <a href="#sec-reasons">Table&nbsp;<span>2</span></a>. 
 
 Observers conducted 15,137 point counts within the 1,348 surveyed sampling units between May 1 and July 25, 2022. They detected 176,954 individual birds representing 350 species.
-
-:::
 
 Please note that not every stratum or superstratum is summarized in this report. We include details of specific strata or superstrata for which our partners are most interested. However, results from all strata and all biologically meaningful superstrata can be found on the [Rocky Mountain Avian Data Center](http://rmbo.org/v3/avian/ExploretheData.aspx) (RMADC). This online database contains species counts, density, abundance, and occupancy results per strata, and also interactive maps showing approximate survey and detection locations. Instructions for using the RMADC are included in Appendix A of this report and are available on the RMADC website (hover over the “Explore the Data” tab for tutorials). Each stratum or superstratum presented in the Results section contains a web link that leads directly to the RMADC with the appropriate queries already populated.  
 
@@ -32,30 +31,9 @@ Unless otherwise specified, all bird species names listed in this report are fro
 
 ## Trend Estimates {.unnumbered}
 
-We estimated species population trends for data collected through `r year`. Results can be found here. Individual stratum estimates are compiled by state.  
+We estimated species population trends for data collected through `r year`. Results can be found in [this Google Drive folder](https://drive.google.com/drive/folders/1-ges-7CkLaHHk-BCtNV-SEvIyoqIHhxm?usp=share_link). Please see the associated Read Me document for an explanation of columns in the trend estimates spreadsheet. If you cannot access Google Drive, please contact [Jennifer Timmer](mailto: jennifer.timmer@birdconservancy.org) for a copy of the data.
 
-To find superstratum estimates, select a spreadsheet for any state included in the superstratum. For example, to find estimates for the Badlands and Prairies Bird Conservation Region (BCR 17), select the spreadsheet for Montana, Wyoming, Nebraska, North Dakota, or South Dakota. Given the size of each state’s spreadsheet, it will likely be useful to filter estimates by stratum or bird species.  
-
-Also, we do not include trend estimates for species with zero detections in a given stratum, and use caution when interpreting trends for low-density species at the superstratum (regional) level when there were zero detections in a given year. In these cases, we add a very small number to the estimate (i.e., half the minimum non-zero estimate) in order to take the log of the estimate. This increases uncertainty around the trend estimates.  
-
-**Explanation of the columns in the trend estimates spreadsheets are as follows:**  
-
-**Stratum**: the abbreviated code for an individual stratum or the name of a superstratum (i.e., contains 2 or more individual strata)  
-**Stratum Name**: full name for an individual stratum (note, this column will contain NA for superstrata as the name is contained in the “stratum” column for superstrata)  
-**Species**: full name of bird species. Note that we record a few mammals detected on surveys, such as red and Abert’s squirrels and pika  
-**ScientificName**: scientific name for each species  
-**Mean**: mean trend estimate per year based on all years a stratum was surveyed. A value of 1 indicates the population is stable, <1 indicates the population is declining and >1 is an increasing population  
-**SD**: standard deviation or amount of variation in the data  
-**CV**: coefficient of variation or ratio of the standard deviation to the mean (lower is better!)  
-**LCI 95**: lower 95% credible interval; the true estimate lies within the lower and upper 95% credible intervals with 95% probability  
-**UCI 95**: upper 95% credible interval; the true estimate lies within the lower and upper 95% credible intervals with 95% probability  
-**LCI 90**: same interpretation as 95% LCI but with 90% probability  
-**UCI 90**: same interpretation as 95% UCI but with 90% probability  
-**Median**: value that represents the midpoint of the distribution. We recommend reporting the median rather than the mean because some credible intervals have long tails so the means can be quite a bit higher than the medians, especially for estimates near zero. Medians are also more representative of the distributions  
-**f**: the probability the trend is in the direction of the mean. This is our confidence in the direction of the trend (not necessarily the magnitude). As 'f' approaches 1, our confidence increases (e.g., if the trend estimate is 1.16 and 'f' is 0.88, then we are 88% sure the population is increasing)  
-**N.Detect**: the number of detections used to estimate trend for each species-stratum combination   
-**N.Strata.Det**: the number of strata with a detection used to estimate regional (superstrata) trends. This column will contain an “NA” for individual strata.  
-**N.Strata**: the number of strata contained in a superstratum (minimum number of strata within a superstratum is 2). This column will contain an “NA” for individual strata.  
+We do not include trend estimates for species with zero detections in a given stratum. Please use caution when interpreting trends for low-density species at the superstratum (regional) level when there were zero detections in a given year. In these cases, we add a very small number to the estimate (i.e., half the minimum non-zero estimate) in order to take the log of the estimate. This increases uncertainty around the trend estimates.  
 
 
 ## Number of Species with Estimates {.unnumbered}
@@ -67,31 +45,73 @@ This change means that the number of species with density or occupancy estimates
 
 ## Planned and Completed Strata {.unnumbered}
 
-```{r, echo = F, message = F}
-#| column: page
-#| label: tbl-planned-completed
-#| tbl-cap: Planned and completed surveys by stratum, 2022.
+### Table 1. Planned and completed surveys by strata, 2022. {#sec-planned-completed}
+
+```{r planned-completed, results = "asis", echo = F, message = F}
+#| column: screen-inset-right
 
 library(DT)
 
 plan.comp.strata <- read.csv("planned-completed-strata-2022.csv")
 
+plan.comp.strata$percent <- plan.comp.strata$Completed/plan.comp.strata$Planned
+
+plan.comp.strata <- plan.comp.strata %>%
+  select(State, bcr, Stratum, LongStratum, Partner, Planned, Completed, percent, Area)
+
+
 datatable(plan.comp.strata, 
           extensions = 'Buttons',
           options = list(pageLength = 10,
                          autoWidth = FALSE,
-                         dom = 'lftp',
-                         buttons = c('copy', 'csv', 'excel', 'pdf', 'print')),
+                         dom = 'lftpB',
+                         buttons = c('copy', 'csv', 'excel'), 
+                         columnDefs = list(list(className = 'dt-left', 
+                                                targets = c(0,2:3)), 
+                                           list(className = 'dt-center', 
+                                                targets = c(1, 4:8)))),
           rownames = FALSE,
-        #  caption = "Table 1. Planned and completed surveys by stratum, 2022.",
+         # caption = "Table x. Planned and completed surveys by stratum, 2022.",
           colnames = c("State", "BCR", "Stratum", "Stratum Description", 
-                       "Who Collected", "Area (km2)", "Planned", "Completed",
-                       "% Completed")) %>%
-  formatStyle(1:9, fontSize = '12px')
+                       "Who Collected", "Planned", "Completed",
+                       "% Completed", "Area (km2)")) %>%
+  formatStyle(1:9, fontSize = '12px') %>%
+  formatPercentage(8)
+
+# cat("<table>",paste0("<caption style='text-align:right'>", "#tab-planned-completed", "Planned and completed surveys by stratum, 2022.", "</caption>"),"</table>", sep ="\n")
+
 
 ```
-BCR = Bird Conservancy of the Rockies; DoD = Department of Defense; GBBO = Great Basin Bird Observatory; IBO = Intermountain Bird Observatory; KBO = Klamath Bird Observatory; UDWR = Utah Division of Wildlife Resources; WYNDD = Wyoming Natural Diversity Database.
 
+:::{.column-screen-inset-right}
+BCR = Bird Conservancy of the Rockies; DoD = Department of Defense; GBBO = Great Basin Bird Observatory; IBO = Intermountain Bird Observatory; KBO = Klamath Bird Observatory; UDWR = Utah Division of Wildlife Resources; WYNDD = Wyoming Natural Diversity Database.
+:::
+
+<br>
+<br>
+<br>
+    
+
+
+### Table 2. Reasons planned surveys were not completed, 2022. {#sec-reasons}
+```{r, echo = F, message = F}
+reasons <- read.csv("reasons-surveys-not-completed.csv")
+
+datatable(reasons, 
+          options = list(pageLength = 10,
+                         autoWidth = FALSE,
+                         dom = 'tip',
+                         columnDefs = list(list(className = 'dt-left', 
+                                                targets = c(0,2)), 
+                                           list(className = 'dt-center', 
+                                                targets = 1))),
+          rownames = FALSE,
+          colnames = c("Stratum", "Number not completed", "Reason")) %>%
+          # caption = "Table x. Reasons surveys not completed, 2022.") %>%
+  formatStyle(0:2, fontSize = '12px')
+
+
+```
 
 
 

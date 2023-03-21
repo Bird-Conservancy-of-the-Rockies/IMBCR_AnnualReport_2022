@@ -4,7 +4,7 @@ project:
 
 book:
   title: "Integrated Monitoring in Bird Conservation Regions"
-  date: "1/11/2023"
+  date: "3/20/2023"
   sidebar:
     title: "2022 IMBCR Field Season Report"
     logo: BCR-logo.png
@@ -14,6 +14,7 @@ book:
     - index.qmd
     - 2-about-us.qmd
     - 3-exec-summary.qmd
+    - tables-figures.qmd
     - 4-intro.qmd
     - 5-methods.qmd
     - part: "Results"
@@ -53,9 +54,7 @@ format:
     number-sections: true
     number-depth: 2
     fontsize: 1em
-
-  pdf:
-    documentclass: scrreprt
+    prefer-html: true
 
 editor: source
 

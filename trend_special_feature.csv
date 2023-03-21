@@ -1,0 +1,17 @@
+Stratum,Species,percent_change_year,mean_trend,CV,Lower,Upper,f,nDetections,Monitoring period
+BLM land in WY,Brewer's Sparrow,3,1.03,0.71,1.02,1.04,1,"11,455",2009-2022
+BLM land in WY,Sagebrush Sparrow,3,1.03,1.07,1.02,1.05,1,"5,757",2009-2022
+BLM land in WY,Sage Thrasher,2,1.02,0.67,1.01,1.03,1,"5,680",2009-2022
+Lander Field Office,Brewer's Sparrow,-6,0.94,1.62,0.92,0.96,1,664,2009-2022
+Lander Field Office,Sagebrush Sparrow,-19,0.81,3.24,0.77,0.86,1,295,2009-2022
+Worland Field Office,Sage Thrasher,-5,0.95,3.25,0.9,1.01,0.94,136,2009-2022
+BCR17,Chestnut-collared Longspur,-17,0.83,2.57,0.79,0.86,1,"4,602",2009-2022
+BCR17,Sprague's Pipit,-26,0.74,16.83,0.56,0.95,0.98,160,2009-2022
+Cedar River National Grassland,Chestnut-collared Longspur,4,1.04,1.2,1.02,1.06,1,885,2013-2022
+Grand River National Grassland,Sprague's Pipit,17,1.17,10.71,0.98,1.4,0.94,35,2013-2022
+USFS Region 2 National Grasslands,Cassin's Sparrow,5,1.05,1.36,1.03,1.07,1,"3,667",2009-2022
+USFS Region 2 National Forests,Olive-sided Flycatcher,4,1.04,1.29,1.02,1.06,1,845,2011-2022
+Comanche National Grassland,Cassin's Sparrow,3,1.03,0.53,1.02,1.04,1,"2,755",2008-2022
+Cimarron National Grassland,Cassin's Sparrow,-11,0.089,2.07,0.86,0.92,1,738,2016-2022
+Arapaho & Roosevelt National Forests,Olive-sided Flycatcher,-19,0.81,11.23,0.67,0.95,0.98,57,2008-2022
+Shoshone National Forest,Olive-sided Flycatcher,35,1.35,4.61,1.24,1.43,1,97,2009-2022
