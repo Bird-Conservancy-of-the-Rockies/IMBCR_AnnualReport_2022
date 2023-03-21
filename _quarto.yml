@@ -58,3 +58,5 @@ format:
 
 editor: source
 
+filters:
+  - newpagelink.lua
