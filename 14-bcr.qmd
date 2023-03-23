@@ -1,0 +1,94 @@
+---
+format: 
+  html:
+    toc: true
+    toc-depth: 4
+---
+# Bird Conservation Regions
+
+![Survey locations and strata in the Badlands and Prairies Bird Conservation Region (BCR 17), 2022](BCR17_Report_2022_NoLogo.png){#fig-bcr-17}
+```{r echo = FALSE, message = FALSE}
+
+library(tidyverse)
+library(xfun) # numbers_to_words function
+library(lubridate)
+
+data <- read.csv("2022_annualreportdata.csv")
+
+  data$FirstVisit <- as_date(data$FirstVisit)
+  data$FirstVisit <- paste(month(data[,"FirstVisit"], 
+                           label = TRUE, abbr = FALSE), 
+                           day(data[,"FirstVisit"]), 
+                           sep = " ")
+  data$LastVisit <- as_date(data$LastVisit)
+  data$LastVisit <- paste(month(data[,"LastVisit"], 
+                          label = TRUE, abbr = FALSE), 
+                          day(data[,"LastVisit"]), 
+                          sep = " ")
+
+```
+
+
+```{r, echo = FALSE, message = FALSE}
+
+x <- which(data$stratum == "BCR17")
+
+name <- data[x, "name"]
+compilation <- ifelse(data[x, "Strata"] > 1, "compiling and jointly", "compiling and")
+n.strata <- if (data[x, "Strata"] <= 10) {numbers_to_words(data[x, "Strata"])
+  } else data[x, "Strata"]
+stratum_plural <- ifelse(data[x, "Strata"] > 1, "strata", "stratum")
+completed.grids <- (data[x, "CompletedGrids"])
+planned.grids <- (data[x, "PlannedGrids"])
+percent.completed <- round((completed.grids/planned.grids)*100)
+
+transect.clause <- if (planned.grids == completed.grids & planned.grids > 2) {
+  paste("all")
+  } else if (planned.grids == completed.grids & planned.grids == 2) {paste("both")
+  } else {paste((completed.grids), 
+             "of", 
+             (planned.grids),
+             sep = " ")}
+
+year <- data[x, "Year"]
+completed.points <- data[x, "CompletedPoints"]
+first.visit <- data[x, "FirstVisit"]
+last.visit <- data[x, "LastVisit"]
+n.species <- data[x, "nBirdSpecies"]
+n.priority <- data[x, "nPriority"]
+n.density <- data[x, "DensitySpeciesCount"]
+n.density.priority <- data[x, "DensityPrioritySpecies"]
+n.density.robust <- data[x, "DensityRobustCV"]
+n.occupancy <- data[x, "OccupancySpeciesCount"]
+n.occupancy.priority <- data[x, "OccupancyPrioritySpecies"]
+n.occupancy.robust <- data[x, "OccupancyRobustCV"]
+hyperlink <- data[x, "hyperlink"]
+
+p1 <- str_glue("We obtained results for {name} by {compilation} analyzing data from {n.strata} {stratum_plural}.")
+
+p2 <- str_glue("Field technicians completed {transect.clause} planned surveys ({percent.completed}%) in {year}. Technicians conducted {completed.points} point counts within the {completed.grids} surveyed grid cells between {first.visit} and {last.visit}. They detected {n.species} bird species, including {n.priority} priority species.")
+
+p3 <- str_glue("Bird Conservancy estimated densities and population sizes for {n.density} species that were detected in any year during which surveys were conducted, {n.density.priority} of which are priority species. The data yielded robust density estimates (CV < 50%) for {n.density.robust} species.")
+
+p4 <- str_glue("Bird Conservancy estimated the proportion of 1 km² grid cells occupied (Ψ, Psi) throughout {name} for {n.occupancy} species that were detected in any year during which surveys were conducted, {n.occupancy.priority} of which are priority species. The data yielded robust occupancy estimates (CV < 50%) for {n.occupancy.robust} species.")
+
+p5 <- str_glue("To view a map of survey locations, density and occupancy results and species counts within {name} across all years of the project, follow the web link below. Hit “Ok” on the Rocky Mountain Avian Data Center Disclaimer and hit the “Run Query” button highlighted in red located near the top of the page (the map will zoom to the area of interest). To view occupancy, density, or species counts results, click on the respective tab in the upper left above the map.")
+
+head <- paste("####", name, sep = " ")
+
+```
+
+`r head`
+
+`r p1`
+
+`r p2`
+
+`r p3`
+
+`r p4`
+
+`r p5`
+
+[BCR17](`r hyperlink`)
+

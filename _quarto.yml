@@ -14,35 +14,35 @@ book:
     - index.qmd
     - 2-about-us.qmd
     - 3-exec-summary.qmd
-    - tables-figures.qmd
-    - 4-intro.qmd
-    - 5-methods.qmd
+    - 4-tables-figures.qmd
+    - 5-intro.qmd
+    - 6-methods.qmd
     - part: "Results"
       chapters: 
-        - 6-results.qmd
-        - 7-usfs.qmd
-        - 8-blm.qmd
-        - 9-dod.qmd
-        - 10-nps.qmd
-        - 11-tribal.qmd
-        - 12-all-other.qmd
-        - 13-bcr.qmd
-        - 14-co.qmd
-        - 15-mt.qmd
-        - 16-ut.qmd
-        - 17-wy.qmd
+        - 7-results.qmd
+        - 8-usfs.qmd
+        - 9-blm.qmd
+        - 10-dod.qmd
+        - 11-nps.qmd
+        - 12-tribal.qmd
+        - 13-all-other.qmd
+        - 14-bcr.qmd
+        - 15-co.qmd
+        - 16-mt.qmd
+        - 17-ut.qmd
+        - 18-wy.qmd
     - part: "Discussion"
       chapters:
-        - 18-applications.qmd
-        - 19-trends.qmd
-        - 20-conclusion.qmd
-    - 21-references.qmd
+        - 19-applications.qmd
+        - 20-trends.qmd
+        - 21-conclusion.qmd
+    - 22-references.qmd
   appendices: 
-    - 22-adc-tips.qmd
-    - 23-history.qmd
-    - 24-protocol-changes.qmd
-    - 25-analysis.qmd
-    - 26-priority-species.qmd
+    - 23-adc-tips.qmd
+    - 24-history.qmd
+    - 25-protocol-changes.qmd
+    - 26-analysis.qmd
+    - 27-priority-species.qmd
         
 
 bibliography: references.bib
