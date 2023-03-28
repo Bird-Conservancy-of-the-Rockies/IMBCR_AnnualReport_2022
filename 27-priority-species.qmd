@@ -130,7 +130,7 @@ datatable(states,
                                            list(className = 'dt-center', 
                                                 targets = c(1:14)))),
           rownames = FALSE) %>%
-  formatStyle(0:12, fontSize = '12px')
+  formatStyle(0:14, fontSize = '12px')
 
 
 ```

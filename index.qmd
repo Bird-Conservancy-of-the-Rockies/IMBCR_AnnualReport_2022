@@ -15,7 +15,7 @@ title: "Home"
 ![Scissor-tailed Flycatcher by Nick Tepper](NickTepper-STFL.jpg)  
 <br> 
 
-[Download a PDF copy of this report](https://www.birdconservancy.org/wp-content/uploads/2022/05/2021-IMBCR-Report-5-10-2022.pdf)
+[Download a PDF copy of this report](https://raw.githubusercontent.com/Bird-Conservancy-of-the-Rockies/IMBCR_AnnualReport_2022/master/Integrated-Monitoring-in-Bird-Conservation-Regions.pdf)
 
 <br>
 <br> 
@@ -50,7 +50,7 @@ title: "Home"
 <br>
 
 **Suggested Citation**\
-Reese, J., McLaren, M. F., Smith, M., Walker, T., Timmer, J. M., White, C. M., Pavlacky Jr., D. C., Sparks, R. A. 2023. Integrated Monitoring in Bird Conservation Regions (IMBCR): 2022 Field Season Report. Bird Conservancy of the Rockies. Brighton, Colorado, USA.  
+Reese, J., McLaren, M. F., Timmer, J. M., Smith, M., Walker, T., White, C. M., Latif, Q., Pavlacky Jr., D. C., Sparks, R. A. 2023. Integrated Monitoring in Bird Conservation Regions (IMBCR): 2022 Field Season Report. Bird Conservancy of the Rockies. Brighton, Colorado, USA.  
 
 <br> 
 <br>
