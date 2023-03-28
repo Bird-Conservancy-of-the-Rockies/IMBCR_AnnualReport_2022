@@ -14,15 +14,72 @@ Each year, we collected breeding bird information in the Great Plains, Rocky Mou
 >
 > The **Department of Defens**e (DoD) uses the density and trend estimates for priority species to examine impacts of installation activities on birds. They also compare estimates for specific DoD strata to surrounding regional estimates for context.  
 
+
+
 ## Recent Overlay Projects
 
 IMBCR partners also implement overlays, or targeted projects, to address specific management questions. Overlay projects use the same sampling design and field methods but are not integrated into the nested stratification of the IMBCR program. These projects benefit from pooling detection data across the IMBCR program, and have regional context for project-specific estimates. Some overlay projects include:  
 
-> Monitored birds in the Atlantic Rim Natural Gas area (south-central Wyoming) to **determine energy development impacts on birds**, and set management triggers to determine when a threshold is met for sagebrush songbird occupancy in the project area compared to surrounding BLM lands.  
+:::{.column-margin}
 
-> Examined community-level effects and bird species relationships with restoration treatments under the **USFS’s Collaborative Forest Landscape Restoration Program** implemented across the Front Range in Colorado.  
+<br>
+<br>
+<br>
 
-> Compared population estimates on private ranches in the Great Plains to estimates in the surrounding region to see if ranches participating in the **Audubon Conservation Ranching** program provide breeding habitat for grassland birds.  
+
+[![](atlantic-rim.png){width=90%}](https://www.birdconservancy.org/wp-content/uploads/2020/02/Atlantic-Rim-Project-1-pager_FINAL.pdf)
+
+<br>
+
+[![](forest-paper.png){width=90%}](https://www.birdconservancy.org/wp-content/uploads/2021/07/LatifEtAl2020ForestRestorationBenefitsBirds.pdf)
+
+<br>
+
+[![](conservation-ranching.png){width=80%}](https://onlinelibrary.wiley.com/doi/10.1111/ddi.13163)
+:::
+
+<br>
+
+>
+>
+> We monitored birds in the Atlantic Rim Natural Gas area (south-central Wyoming) to **determine energy development impacts on birds**, and set management triggers to determine when a threshold is met for sagebrush songbird occupancy in the project area compared to surrounding BLM lands.  
+>
+>
+>[Read a one-pager about the Atlantic Rim project.](https://www.birdconservancy.org/wp-content/uploads/2020/02/Atlantic-Rim-Project-1-pager_FINAL.pdf)
+>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+>
+>
+> We examined community-level effects and bird species relationships with restoration treatments under the **USFS’s Collaborative Forest Landscape Restoration Program** implemented across the Front Range in Colorado. 
+>
+>
+>
+>[Read the results in *Ecological Applications*](https://www.birdconservancy.org/wp-content/uploads/2021/07/LatifEtAl2020ForestRestorationBenefitsBirds.pdf)
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+>
+>
+> Partners compared population estimates on private ranches in the Great Plains to estimates in the surrounding region to see if ranches participating in the **Audubon Conservation Ranching** program provide breeding habitat for grassland birds.  
+>
+>
+>[Read more *Diversity and Distributions*](https://onlinelibrary.wiley.com/doi/10.1111/ddi.13163)
+
+<br>
+<br>
+<br>
 
 ## Adaptive Management
 

@@ -16,6 +16,19 @@ prefer-html: true
 
 <a href="#sec-table-5">Table&nbsp;<span>5</span></a> Population trend estimates for sensitive species within select U.S. Forest Service National Grassland and National Forest strata from the IMBCR program.
 
+<a href="#sec-table-6">Table&nbsp;<span>6</span></a> Priority species detected in Bird Conservation Regions (BCRs) surveyed in 2022, as designated by Partners in Flight.
+
+<a href="#sec-table-7">Table&nbsp;<span>7</span></a> Priority species detected in 2022, by state, with management designations by state agencies.
+
+<a href="#sec-table-8">Table&nbsp;<span>8</span></a> Priority species detected on Bureau of Land Management lands in 2022, with management designations by state.
+
+<a href="#sec-table-9">Table&nbsp;<span>9</span></a> Priority species detected on US Forest Service lands in Region 1 in 2022, with management designations by region and unit
+
+<a href="#sec-table-10">Table&nbsp;<span>10</span></a> Priority species detected on US Forest Service lands in Region 2 in 2022, with management designations by region and unit.
+
+<a href="#sec-table-11">Table&nbsp;<span>11</span></a> Priority species detected on US Forest Service lands in Region 3 in 2022, with management designations by region and unit.
+
+<a href="#sec-table-12">Table&nbsp;<span>12</span></a> Priority species detected on US Forest Service lands in Region 4 in 2022, with management designations by region and unit.
 
 ## Figures {.unnumbered}
 

@@ -4,16 +4,409 @@ crossref:
   chapters: true
 ---
 
-## Partners in Flight 
+## Partners in Flight {.unnumbered}
 
-## State Agencies 
+:::{.column-screen-inset-right style="color: gray"}
+###### Table 6. Priority species detected in Bird Conservation Regions (BCRs) surveyed in 2022, as designated by Partners in Flight. BCRs include BCR 9 (Great Basin), BCR 10 (Northern Rockies), BCR 11 (Prairie Potholes), BCR 15 (Sierra Nevada) and BCR 16 (Southern Rockies and Colorado Plateau), BCR 17 (Badlands and Prairies), BCR 18 (Shortgrass Prairie), BCR 19 (Central Mixed Grass Prairie), and BCR 33 (Sonoran and Mojave Deserts). An “x” in the Occupancy or Density Estimated column indicates that occupancy or density estimates were generated for the priority species at some level in one or more of the BCRs where it holds a priority designation. {#sec-table-6}
+:::
 
-## Bureau of Land Management 
+```{r, message = FALSE, echo = FALSE}
+#| column: screen-inset-right
 
-## U.S.F.S. Region 1 
+library(tidyverse)
+library(DT)
 
-## U.S.F.S. Region 2
+pif <- read.csv("PIF.csv")
 
-## U.S.F.S. Region 3
+pif <- pif %>%
+  select(Species, Density, Occupancy, X9, X10, X11, X15, X16, X17, X18, X19, X33, X34)
 
-## U.S.F.S. Region 4
+pif <- pif %>%
+  mutate(Density = if_else(Density == 1, "x", "")) %>%
+  mutate(Occupancy = if_else(Occupancy == 1, "x", ""))
+
+datatable(pif, 
+          extensions = c('Buttons', 'FixedColumns'),
+          options = list(pageLength = 5,
+                         autoWidth = FALSE,
+                         fixedColumns = list(leftColumns = 3),
+                         dom = 'lftpB',
+                         buttons = c('copy', 'csv', 'excel'), 
+                         columnDefs = list(list(className = 'dt-left', 
+                                                targets = c(0)), 
+                                           list(className = 'dt-center', 
+                                                targets = c(1:12)))),
+          rownames = FALSE,
+          colnames = c("Species", "Density Estimate", "Occupancy Estimate", 
+                       "BCR 9", "BCR 10", "BCR 11", 
+                       "BCR 15", "BCR 16", "BCR 17", "BCR 18",
+                       "BCR 19", "BCR 33", "BCR 34")) %>%
+  formatStyle(0:12, fontSize = '12px')
+
+
+```
+:::{.column-screen-inset-right style="font-size: 11px"}
+RC = Regional Concern Species; RS = Regional Stewardship Species (Partners in Flight 2019)
+:::
+
+## State Agencies {.unnumbered}
+
+:::{.column-screen-inset-right style="color: gray"}
+###### Table 7.Priority species detected in 2022, by state, with management designations by state agencies. Agencies include Arizona Game and Fish Department (AZGF), Colorado Parks and Wildlife (CPW), Idaho Fish and Game Department (IDFG), Kansas Department of Wildlife, Parks and Tourism (KDWPT), Montana Fish, Wildlife and Parks (MTFWP), Nebraska Game and Parks Commission (NGPC), and New Mexico Department of Game and Fish (NMDGF). An “x” in the Occupancy or Density Estimated columns indicates estimates were generated for that species at some level in one or more of the states where it holds a priority designation. {#sec-table-7}
+:::
+
+```{r, echo = FALSE, message = FALSE}
+#| column: screen-inset-right
+
+states <- read.csv("StateWildlife.csv")
+
+states <- states %>%
+  select(Species, Density, Occupancy, Colorado, Idaho, Kansas, Montana, Nebraska, New.Mexico, 
+         North.Dakota, Oklahoma, South.Dakota, Texas, Utah, Wyoming) %>%
+  arrange(Species)
+
+states <- states %>%
+  mutate(Density = if_else(Density == 1, "x", "")) %>%
+  mutate(Occupancy = if_else(Occupancy == 1, "x", "")) %>%
+  mutate(New.Mexico = case_when(New.Mexico == "Species of Greatest Conservation Need" ~ "SGCN",
+                                New.Mexico == "Species of Greatest Conservation Need,State Threatened" ~ "SGCN, ST",
+                                New.Mexico == "Species of Greatest Conservation Need,State Endangered" ~ "SGCN, SE",
+                                New.Mexico == "Species of Greatest Conservation Need,State Endangered " ~ "SGCN, SE",
+                                New.Mexico == "State Threatened, Species of Greatest Conservation Need" ~ "SGCN, ST",
+                                New.Mexico == "State Endangered,Species of Greatest Conservation Need" ~"SGCN, SE")) %>%
+  mutate(Colorado = case_when(Colorado == "Tier 2,Special Concern" ~ "T2, SC",
+                              Colorado == "Tier 2" ~ "T2",
+                              Colorado == "State Endangered,Tier 2" ~ "T2, SE",
+                              Colorado == "Special Concern,Tier 2" ~ "T2, SC",
+                              Colorado == "Special Concern,Tier 1" ~ "T1, SC",
+                              Colorado == "Tier 2,State Threatened" ~ "T2, ST",
+                              Colorado == "Tier 1,Special Concern" ~ "T1, SC",
+                              Colorado == "Tier 1" ~ "T1",
+                              Colorado == "Tier 2,State Endangered" ~ "T2, SE",
+                              Colorado == "Tier 1,Special Concern,State Endangered" ~ "T1, SC, SE",
+                              Colorado == "State Threatened,Tier 1" ~ "T1, ST",
+                              Colorado == "Tier 1,State Threatened" ~ "T1, ST",
+                              Colorado == "State Endangered,Tier 1" ~ "T1, SE")) %>%
+  mutate(Idaho = case_when(Idaho == "Tier II" ~ "T2",
+                           Idaho == "Tier III" ~ "T3",
+                           Idaho == "Tier I" ~ "T1")) %>%
+  mutate(Kansas = case_when(Kansas == "Tier II" ~ "T2",
+                            Kansas == "Tier I,State Endangered" ~ "T1, SE",
+                            Kansas == "State Threatened,Tier I" ~ "T1, ST",
+                            Kansas == "Tier I" ~ "T1",
+                            Kansas == "Tier I,State Threatened" ~ "T1, ST")) %>%
+  mutate(Nebraska = case_when(Nebraska == "Tier I" ~ "T1",
+                              Nebraska == "Tier II" ~ "T2")) %>%
+  mutate(North.Dakota = case_when(North.Dakota == "Level I" ~ "L1",
+                                  North.Dakota == "Level II" ~ "L2",
+                                  North.Dakota == "Level III" ~ "L3")) %>%
+  mutate(Oklahoma = case_when(Oklahoma == "Tier I" ~ "T1",
+                              Oklahoma == "Tier II" ~ "T2",
+                              Oklahoma == "Tier III" ~ "T3")) %>%
+  mutate(South.Dakota = case_when(South.Dakota == "1,State Endangered" ~ "1, SE",
+                                  South.Dakota == "State Threatened,1" ~ "1, ST",
+                                  South.Dakota ==  "2a" ~ "2A",
+                                  South.Dakota == "2b" ~ "2B")) %>%
+  mutate(Wyoming = case_when(Wyoming == "Tier I" ~ "T1",
+                             Wyoming == "Tier II" ~ "T2",
+                             Wyoming == "Tier III" ~ "T3"))
+
+states <- states %>%
+  rename("North Dakota" = "North.Dakota", "New Mexico" = "New.Mexico",
+         "South Dakota" = "South.Dakota", "Density Estimate" = "Density",
+         "Occupancy Estimate" = "Occupancy")
+
+
+
+datatable(states, 
+          extensions = c('Buttons', 'FixedColumns'),
+          options = list(pageLength = 5,
+                         autoWidth = FALSE,
+                         fixedColumns = list(leftColumns = 3),
+                         dom = 'lftpB',
+                         buttons = c('copy', 'csv', 'excel'), 
+                         columnDefs = list(list(className = 'dt-left', 
+                                                targets = c(0)), 
+                                           list(className = 'dt-center', 
+                                                targets = c(1:14)))),
+          rownames = FALSE) %>%
+  formatStyle(0:12, fontSize = '12px')
+
+
+```
+
+:::{.column-screen-inset-right style="font-size: 11px"}
+**CPW**: T1 = species of highest conservation priority in the state; T2 = important in light of forestalling population trends or habitat conditions; SSC = State Special Concern; SE = State Endangered; ST = State Threatened (Colorado Parks and Wildlife, 2015); **IDFG**: T1 = Tier 1 priority species; T2 = Tier 2 priority species; T3 = Tier 3 priority species (J. Halka, personal communication, 2018); **KDWPT**: T1 = Tier 1 priority species; T2 = Tier 2 priority species (C. Berens, personal communication, 2018); MTFWP: S1 = at high risk; S1B = at high risk, breeding; S1M = at high risk, migratory; S2 = at risk; S2B = at risk, breeding; S3 = potentially at risk; S3B = potentially at risk, breeding; S4 = apparently secure; S5N = common, nonbreeding (Montana Fish Wildlife and Parks, 2015); **NGPC**: T1 = Tier I: Globally or nationally most at-risk of extinction; T2 = Tier II: State Critically Imperiled, State Imperiled or State Vulnerable (Schneider et al, 2018); **NMDGF**: SGCN = Species of Greatest Conservation Need; ST = State Threatened; SE = State Endangered (New Mexico Department of Game and Fish, 2016); **NDGF**: L1 = Level 1: species having a high level of conservation priority because of declining status either here or across their range or a high rate of occurrence in North Dakota constituting the core of the species breeding range (i.e. “responsibility” species) but are at-risk range wide; L2 = Level 2: Species having a moderate level of conservation priority or a high level of conservation priority but a substantial level of non-SWG funding is available to them; L3 = Level 3: species having a moderate level of conservation priority but are believed to be peripheral or non-breeding in North Dakota (Dyke et al, 2015); **ODWC**: Tier 1 = Species receiving a combined score of 13 to 15 on Oklahoma's Species of Greatest Conservation Need Selection and Scoring Criteria; Tier 2 = Species receiving a combined score of 11 or 12 on Oklahoma's Species of Greatest Conservation Need Selection and Scoring Criteria; Tier 3 = Species receiving a combined score of 6 to 10 on Oklahoma's Species of Greatest Conservation Need Selection and Scoring Criteria (Oklahoma Department of Wildlife Conservation, 2015); **SDGFP**: 1 = State or federally listed species for which the state has a mandate for recovery 2A = Species that are regionally or globally imperiled and for which South Dakota represents an important portion of their remaining range; 2B = Species that are regionally or globally secure* and for which South Dakota represents an important portion of their remaining range; 3 = Species with characteristics that make them vulnerable (E. Dowd, personal communication; 2018); **TPWD**: S1 = Critically Imperiled; S1B = Critically Imperiled Breeding; S2 = Imperiled; S2B = Imperiled Breeding; S3 = Vulnerable; S3B = Vulnerable Breeding; S3N = Vulnerable Nonbreeding; S4 = Apparently Secure; S4B = Apparently Secure Breeding; S5 = Secure; S5B = Secure Breeding; SHB = Possibly Extirpated Breeding; SXB = Presumed Extirpated Breeding (Texas Parks and Wildlife Department, 2012); **UDWR**: S1 = Critically Imperiled; S1B = Critically Imperiled Breeding; S2 = Imperiled; S2B = Imperiled Breeding; S3 = Vulnerable; S3B = Vulnerable Breeding; S3N = Vulnerable Nonbreeding; S4 = Apparently secure; S4B = Apparently secure Breeding; S4N = Apparently secure Nonbreeding; SU = Unrankable, due to conflicting or inadequate information; (Utan Wildlife Action Plan Joint Team, 2015); **WYGF**: T1 = Species scoring 37-54 on WYGFD’s ranking matrix; T2 = Species scoring  19-36 on WYGFD’s ranking matrix; T3 = Species scoring 1-88 on the WYGFD’s ranking matrix (Wyoming Game and Fish Department, 2016).  
+:::
+
+## Bureau of Land Management {.unnumbered}
+
+:::{.column-screen-inset-right style="color: gray"}
+###### Table 8. Priority species detected on Bureau of Land Management lands in 2022, with management designations by state. An “X” in the Occupancy or Density Estimated columns indicates estimates were generated for that species in at least one BLM stratum in one or more of the states where it holds a priority designation. {#sec-table-8}
+:::
+
+```{r, echo = F, message = F}
+#| column: screen-inset-right
+
+blm <- read.csv("BLM.csv")
+
+blm <- blm %>%
+  mutate(Density = if_else(Density == 1, "x", "")) %>%
+  mutate(Occupancy = if_else(Occupancy == 1, "x", "")) %>%
+  mutate(South.Dakota.BLM = case_when(South.Dakota.BLM == "Sensitive Species" ~ "SS")) %>%
+  mutate(Washington.BLM = case_when(Washington.BLM == "Sensistive Species" ~ "SS")) %>%
+  mutate(Idaho.BLM = case_when(Idaho.BLM == "Type II" ~ "T2",
+                               Idaho.BLM == "Federally Threatened" ~ "FT")) %>%
+  mutate(Nevada.BLM = case_when(Nevada.BLM == "Sensitive Species" ~ "SS")) %>%
+  mutate(California.BLM = case_when(California.BLM == "Sensitive Species" ~ "SS")) %>%
+  mutate(Oregon.BLM = case_when(Oregon.BLM == "Sensitive Species" ~ "SS")) %>%
+  mutate(Wyoming.BLM = case_when(Wyoming.BLM == "Sensitive Species" ~ "SS",
+                                 Wyoming.BLM == "Federally Threatened" ~ "FT")) %>%
+  mutate(North.Dakota.BLM = case_when(North.Dakota.BLM == "Sensitive Species" ~ "SS",
+                                      North.Dakota.BLM == "Federally Endangered" ~ "FE",
+                                      North.Dakota.BLM == "Federally Threatened" ~ "FT")) %>%
+  mutate(Colorado.BLM = case_when(Colorado.BLM == "Sensitive Species" ~ "SS",
+                                  Colorado.BLM == "Federally Threatened" ~ "FT")) %>%
+  mutate(Utah.BLM = case_when(Utah.BLM == "Sensitive Species" ~ "SS",
+                              Utah.BLM == "Federally Threatened" ~ "FT")) %>%
+  mutate(Montana.BLM = case_when(Montana.BLM == "Sensitive Species" ~ "SS",
+                                 Montana.BLM == "Federally Endagered" ~ "FE",
+                                 Montana.BLM == "Federally Threanted" ~ "FT"))
+
+blm <- blm %>%
+  select(-Observations) %>%
+  relocate(Density, .before = Occupancy)
+
+datatable(blm, 
+          extensions = c('Buttons', 'FixedColumns'),
+          options = list(pageLength = 5,
+                         autoWidth = FALSE,
+                         fixedColumns = list(leftColumns = 3),
+                         dom = 'lftpB',
+                         buttons = c('copy', 'csv', 'excel'), 
+                         columnDefs = list(list(className = 'dt-left', 
+                                                targets = c(0)), 
+                                           list(className = 'dt-center', 
+                                                targets = c(1:13)))),
+          rownames = FALSE,
+          colnames = c("Species", "Density Estimate", "Occupancy Estimate",
+                       "South Dakota BLM", "Washington BLM", "Idaho BLM", 
+                       "Nevada BLM", "California BLM", "Oregon BLM", "Wyoming BLM",
+                       "North Dakota BLM", "Colorado BLM", "Utah BLM", "Montana BLM")) %>%
+  formatStyle(0:13, fontSize = '12px')
+
+
+
+```
+
+:::{.column-screen-inset-right style="font-size: 11px"}
+SS = Sensitive Species; California (Bureau of Land Management, 2019); FT = Federally Threatened; SS = Sensitive Species; Colorado (R. Sell, personal communication, 2018); T1 – Includes species listed under the Endangered Species Act (ESA) as Endangered (E) or Threatened (T), Experimental Essential (XE) populations, and designated Critical Habitat (CH); T2 – Idaho BLM Sensitive Species: Includes State Director designated species as well as FWS Candidate Species (C), FWS Proposed species (P), FWS Experimental Nonessential Populations (XN), and species delisted from ESA Threatened or Endangered status within the past 5-years (D); Idaho (Bureau of Land Management, 2014); SS = Sensitive Species; Montana (Montana Natural Heritage Program, 2015); SS = Sensitive Species; Nevada (Bureau of Land Management, 2017); SS = Sensitive Species; North Dakota, South Dakota (Bureau of Land Management, 2014); Oregon (Bureau of Land Management, 2019); Utah (G.D. Cook, personal communication, 2018); Wyoming (Bureau of Land Management, 2010).
+:::
+
+
+## U.S.F.S. Region 1 {.unnumbered}
+
+:::{.column-screen-inset-right style="color: gray"}
+###### Table 9. Priority species detected on US Forest Service lands in Region 1 in 2022, with management designations by region and unit. Codes for Units: Beaverhead-Deerlodge NF (BDNF), Bitterroot NF (BINF), Clearwater NF (CLNF), Custer NF (CUNF), Dakota Prairie NG (DPNG), Flathead NF (FLNF), Gallatin NF (GANF). An “x” in the Occupancy or Density Estimated columns indicates estimates were generated for that species in at least one USFS stratum where it holds a priority designation. {#sec-table-9}
+:::
+
+```{r, message = F, echo = F}
+#| column: screen-inset-right
+
+r1 <- read_csv("Region1.csv")
+
+r1 <- r1 %>%
+  mutate(Density = if_else(Density == 1, "x", "")) %>%
+  mutate(Occupancy = if_else(Occupancy == 1, "x", "")) %>%
+  mutate(across(5:18,
+                ~ case_when(. == "Management Indicator Species" ~ "MIS",
+                            . == "Management Indicator Species,Sensitive Species" ~ "MIS, SS",
+                            . == "Sensitive Species" ~ "SS",
+                            . == " Sensitive Species,Management Indicator Species" ~ "MIS, SS",
+                            . == "Focal Species" ~ "FS",
+                            . == "Sensitive Species " ~ "SS",
+                            . == " Focal Species,Management Indicator Species" ~ "MIS, FS",
+                            . == "Federally Endangered"  ~ "FE",
+                            . == "Federally Threatened" ~ "FT")) )
+
+r1 <- r1 %>%
+  select(-Observations) %>%
+  relocate(`Region-wide USFS R1`, .before = `Helena NF`)
+
+datatable(r1, 
+          extensions = c('Buttons', 'FixedColumns'),
+          options = list(pageLength = 5,
+                         autoWidth = FALSE,
+                         fixedColumns = list(leftColumns = 3),
+                         dom = 'lftpB',
+                         buttons = c('copy', 'csv', 'excel'), 
+                         columnDefs = list(list(className = 'dt-left', 
+                                                targets = c(0)), 
+                                           list(className = 'dt-center', 
+                                                targets = c(1:16)))),
+          rownames = FALSE) %>%
+  formatStyle(0:16, fontSize = '12px')
+
+
+```
+
+:::{.column-screen-inset-right style="font-size: 11px"}
+R1SS = Region 1 Sensitive Species; MIS = Management Indicator Species; FS = Focal Species; FT = Federally Threatened; FE = Federally Endangered, SS = Sensitive Species (C. Staab, personal communication, 2018)
+:::
+
+
+## U.S.F.S. Region 2 {.unnumbered}
+
+:::{.column-screen-inset-right style="color: gray"}
+###### Table 10. Priority species detected on US Forest Service lands in Region 2 in 2022, with management designations by region and unit. Codes for Units: Arapaho and Roosevelt NF (ARNF), Bighorn NF (BINF), Black Hills NF (BHNF), Buffalo Gap NG (BGNG), Comanche NG (CONG), Fort Pierre NG (FPNG), Grand Mesa, Uncompaghre and Gunnison NF (GMUG), Medicine Bow NF (MBNF), Nebraska/Samuel R. McKelvie NF (NENF), Oglala NG (OGNG), Pawnee NG (PANG), Rio Grande NF (RGNF), Routt NF (RONF), and San Juan NF (SJNF), Shoshone NF (SHNF), Thunder Basin NG (TBNG), and White River NF (WRNF). An “x” in the Occupancy or Density Estimated columns indicates estimates were generated for that species in at least one USFS stratum where it holds a priority designation. {#sec-table-10}
+:::
+
+```{r, message = F, echo = F}
+#| column: screen-inset-right
+
+r2 <- read_csv("Region2.csv")
+
+r2 <- r2 %>%
+  mutate(Density = if_else(Density == 1, "x", "")) %>%
+  mutate(Occupancy = if_else(Occupancy == 1, "x", "")) %>%
+  mutate(across(5:22,
+                ~ case_when(. == "Management Indicator Species" ~ "MIS",
+                            . == "Species of Local Concern" ~ "SLC",
+                            . == "Species of Viability Concern" ~ "SVC",
+                            . == "Species of Special Concern" ~ "SSC",
+                            . == "Species of Concern" ~ "SC",
+                            . == "Sensitive Species" ~ "SS",
+                            . == "Species Needing More Inventory" ~ "SNMI",
+                            . == "Federally Endangered"  ~ "FE",
+                            . == "Federally Threatened" ~ "FT")) )
+
+r2 <- r2 %>%
+  select(-Observations) %>%
+  relocate(`Region-wide USFS R2`, .before = `White River NF`)
+
+datatable(r2, 
+          extensions = c('Buttons', 'FixedColumns'),
+          options = list(pageLength = 5,
+                         autoWidth = FALSE,
+                         fixedColumns = list(leftColumns = 3),
+                         dom = 'lftpB',
+                         buttons = c('copy', 'csv', 'excel'), 
+                         columnDefs = list(list(className = 'dt-left', 
+                                                targets = c(0)), 
+                                           list(className = 'dt-center', 
+                                                targets = c(1:20)))),
+          rownames = FALSE) %>%
+  formatStyle(0:20, fontSize = '12px')
+
+
+```
+
+
+:::{.column-screen-inset-right style="font-size: 11px"}
+R2SS = Region 2 Sensitive Species; MIS = Management Indicator Species; SI = Species of Interest; SLC = Species of Local Concern; SNI = Species Needing More Inventory; SC = Species of Concern; SVC = Species of Viability Concern; SSC = Species of Special Concern; FT = Federally Threatened; FE = Federally Endangered (US Forest Service, 2008).
+:::
+
+## U.S.F.S. Region 3 {.unnumbered}
+
+:::{.column-screen-inset-right style="color: gray"}
+###### Table 11. Priority species detected on US Forest Service lands in Region 3 in 2022, with management designations by region and unit. An “x” in the Occupancy or Density Estimated columns indicates estimates were generated for that species in at least one USFS stratum where it holds a priority designation. {#sec-table-11}
+:::
+
+```{r, message = F, echo = F}
+#| column: screen-inset-right
+
+r3 <- read_csv("Region3.csv")
+
+r3 <- r3 %>%
+  mutate(Density = if_else(Density == 1, "x", "")) %>%
+  mutate(Occupancy = if_else(Occupancy == 1, "x", "")) %>%
+  mutate(across(5:12,
+                ~ case_when(. == "Management Indicator Species" ~ "MIS",
+                            . == "Species of Concern" ~ "SC",
+                            . == "Sensitive Species" ~ "SS",
+                            . == "Federally Threatened" ~ "FT",
+                            . == "Focal Species" ~ "FS",
+                            . == "Proposed Management Indicator Species" ~ "PMIS")))
+
+r3 <- r3 %>%
+  select(-Observations)
+
+datatable(r3, 
+          extensions = c('Buttons', 'FixedColumns'),
+          options = list(pageLength = 5,
+                         autoWidth = FALSE,
+                         fixedColumns = list(leftColumns = 3),
+                         dom = 'lftpB',
+                         buttons = c('copy', 'csv', 'excel'), 
+                         columnDefs = list(list(className = 'dt-left', 
+                                                targets = c(0)), 
+                                           list(className = 'dt-center', 
+                                                targets = c(1:10)))),
+          rownames = FALSE) %>%
+  formatStyle(0:10, fontSize = '12px')
+
+
+```
+
+:::{.column-screen-inset-right style="font-size: 11px"}
+R3SS = USFS Region 3 Sensitive Species; MIS = Management Indicator Species; SC = Species of Concern; FS = Focal Species (S. R. Plunkett and N. Kline, personal communication, 2018).
+:::
+
+## U.S.F.S. Region 4 {.unnumbered}
+
+:::{.column-screen-inset-right style="color: gray"}
+###### Table 12. Priority species detected on US Forest Service lands in Region 4 in 2022, with management designations by region and unit. Codes for Units: Ashley NF (ASNF), Boise NF (BONF), Bridger-Teton NF (BTNF), Caribou-Targhee NF (CTNF), Humboldt-Toiyabe NF (HTNF). An “x” in the Occupancy or Density Estimated columns indicates estimates were generated for that species in at least one USFS stratum where it holds a priority designation. {#sec-table-12}
+:::
+
+
+```{r, message = F, echo = F}
+#| column: screen-inset-right
+
+r4 <- read_csv("Region4.csv")
+
+# r4 %>% select(5:15) %>%  t %>% c %>% unique
+
+r4 <- r4%>%
+  mutate(Density = if_else(Density == 1, "x", "")) %>%
+  mutate(Occupancy = if_else(Occupancy == 1, "x", "")) %>%
+  mutate(across(5:15,
+                ~ case_when(. == "Focal Species" ~ "FS",
+                            . == "Sensitive Species" ~ "SS",
+                            . == "Management Indicator Species" ~ "MIS",
+                            . == "Proposed Species of Conservation Concern" ~ "PSCC",
+                            . == "Species of Interest" ~ "SI",
+                            . == "Bald/Golden Eagle Protection Act" ~ "EPA",
+                            . == "Management Indicator Species,Sensitive Species" ~ "MIS, SS",
+                            . == "Proposed Management Indicator Species" ~ "PMIS",
+                            . == "Proposed Species of Conservation Concern,Sensitive Species" ~ "PSCC, SS",
+                            . == "Conservation Agreement Species,Sensitive Species" ~ "CAS, SS",
+                            . == "Nevada species of concern" ~ "NSC",
+                            . == "Sensitive (California),Threatened (Mexican)" ~ "S(C),T(M)",
+                            . == "Federally Endagered" ~ "FE",
+                            . == "Federally Threatened" ~ "FT")))
+
+r4 <- r4 %>%
+  select(-Observations) %>%
+  relocate(`Region-wide USFS R4`, .before = `Sawtooth NF`)
+
+datatable(r4, 
+          extensions = c('Buttons', 'FixedColumns'),
+          options = list(pageLength = 5,
+                         fixedColumns = list(leftColumns = 3),
+                         autoWidth = FALSE,
+                         dom = 'lftpB',
+                         buttons = c('copy', 'csv', 'excel'), 
+                         columnDefs = list(list(className = 'dt-left', 
+                                                targets = c(0)), 
+                                           list(className = 'dt-center', 
+                                                targets = c(1:13)))),
+          rownames = FALSE) %>%
+  formatStyle(0:13, fontSize = '12px')
+
+
+```
+
+
+:::{.column-screen-inset-right style="font-size: 11px"}
+CAS = Conservation Agreement Species; FE = Federally Endangered Species; FS = Focal Species; EPA = Eagle Protection Act; MIS = Management Indicator Species; NV SC = Nevada Species of Concern; PMIS = Proposed Management Indicator Species; R4SS = Region 4 Sensitive Species; SC = Species of Concern; SI = Species of Interest; SS = Sensitive Species (R. Sadak, personal communication, 2018)
+:::

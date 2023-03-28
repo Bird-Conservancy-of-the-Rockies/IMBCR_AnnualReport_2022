@@ -11,11 +11,36 @@ title: "Home"
 
 <br> 
 <br>
-<br> 
-<br>
   
 ![Scissor-tailed Flycatcher by Nick Tepper](NickTepper-STFL.jpg)  
 <br> 
+
+[Download a PDF copy of this report](https://www.birdconservancy.org/wp-content/uploads/2022/05/2021-IMBCR-Report-5-10-2022.pdf)
+
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br>
+<br> 
+<br>
+<br> 
+<br>
 <br>
 <br> 
 <br>
@@ -38,15 +63,32 @@ matthew.mclaren@birdconservancy.org
 :::
 ## 2022 Field Season Report {.unnumbered}
 
-Bird Conservancy of the Rockies (Bird Conservancy), in conjunction with its partners, conducted the 15th consecutive year of landbird monitoring for the Integrated Monitoring in Bird Conservation Regions (IMBCR) program.  
+Welcome to the 2022 IMBCR Annual Report! We hope you find it to be user-friendly and informative. This report will help you access results from IMBCR avian point count surveys, including species observations and population estimates such as density, occupancy, and population trend. This website contains all the same information we've presented in past years, but if you prefer a PDF version of the report, you can download a copy via the link to the right.  
 
-IMBCR is based on a spatially balanced sampling design which provides inference to avian populations at various scales, from local management units to entire states or Bird Conservation Regions, facilitating conservation at local and national levels. The nested design also provides a consistent and flexible framework for understanding and comparing the status and annual changes of bird populations with local and regional context.  
+#### **Navigating this document**
 
-Collaboration across organizations and spatial scales increases sample sizes and improves the accuracy and precision of population estimates. Analyzing the data collectively allows us to estimate detection probabilities for species that would otherwise have insufficient numbers of detections at local scales.  
+Use the sidebar on the left to navigate to different sections of the report and search within the document. Within many sections, an "On this page" menu of links will appear on the right. This menu may collapse when content extends across the page, but you can click on the collapsed label to access the navigation links.  
 
-For these reasons, the IMBCR program is well-positioned to address conservation and management needs for a wide range of stakeholders, encouraging an interdisciplinary approach to bird conservation that combines monitoring, research, and management.
-<br> 
-<br>
+#### **Quick start guide - viewing the results**
+
+>##### **Survey locations, species observations, density, and occupancy**
+>
+>Click on the relevant agency or geographic region on the sidebar, then use the "On this page" menu to choose a management unit. For each mangement unit, you'll find a link to the [Rocky Mountain Avian Data Center](http://rmbo.org/v3/avian/ExploretheData.aspx) (RMADC). The RMADC contains interactive maps illustrating survey and detection locations, and tables displaying species counts and population estimates (i.e., density and occupancy). Each link leads directly to the RMADC with the appropriate queries already populated.
+>
+>##### **Population trend**
+>
+>Trend estimates for all species and strata are available in [this Google Drive folder](https://drive.google.com/drive/folders/1-ges-7CkLaHHk-BCtNV-SEvIyoqIHhxm?usp=share_link). If you cannot access Google Drive, please contact [Jennifer Timmer](mailto: jennifer.timmer@birdconservancy.org) for a copy of the data.
+
+Please note that not every stratum or conceivable combination of strata is summarized in this report. However, all individual strata and all biologically meaningful combinations of strata, or “superstrata”, can be found on the RMADC.
+
+Instructions for using the RMADC are included in Appendix A of this report and are available on the RMADC itself (hover over the “Explore the Data” tab for tutorials). 
+
+
+::: {.callout-note appearance="minimal"}
+## Special Feature - Population Trends
+
+In @sec-trends we provide a few examples demonstrating the use of IMBCR population trends for tracking the status of designated species of concern and determining where specific populations may require management or conservation efforts. 
+:::
 
 **Bird Conservancy of the Rockies**\
 14500 Lark Bunting Lane\
